@@ -1,22 +1,37 @@
 <template>
-  <div class="w-screen min-h-screen bg-gray-900 flex flex-col">
+  <div class="w-full 'q' min-h-screen bg-gray-900 flex flex-col">
     <Nav/>
     <Welcome/>
+    <KnowMe/>
+    <Projects/>
+    <Skills/>
+    <!-- <Skills/> -->
   </div>
   
 </template>
 <script >
 import Nav from './components/nav/Nav.vue';
-import Welcome from './components/welcome/Welcome.vue'
+import Welcome from './components/welcome/Welcome.vue';
+import KnowMe from './components/know-me/KnowMe.vue';
+import Projects from './components/projects/projects.vue';
+import Skills from './components/Skills/Skills.vue';
 export default {
   name: 'App',
   components: {
     Nav,
-    Welcome
-  }
+    Welcome,
+    KnowMe,
+    Projects,
+    Skills
+}
 }
 </script>
-
-<style >
-
+<style>
+  html, body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
 </style>
