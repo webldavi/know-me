@@ -10,8 +10,8 @@
         </div>
         <div class="w-max flex flex-row gap-12 text-xl font-mono text-white">
             <Link name='Inicio' :scroll="0"/>
-            <Link name='Sobre Mim' :scroll="700"/>
-            <Link name='Projetos' :scroll="1250"/>
+            <Link name='Sobre Mim' :scroll="500"/>
+            <Link name='Projetos' :scroll="1050"/>
             <Link name='Habilidades' :scroll="1850"/>
         </div>
     </div>
