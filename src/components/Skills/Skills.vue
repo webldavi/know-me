@@ -13,7 +13,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="">
                 </div>
                 <div @mouseover="updateSkill('vue')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 bg-gray-700 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
-                    <img src="https://mestresdaweb.com.br/wp-content/uploads/2020/05/1200px-Vue.js_Logo_2.svg-1024x887.png" alt="">
+                    <img src="https://br.vuejs.org/images/logo.svg" alt="">
                 </div>
                 <div @mouseover="updateSkill('react')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
                     <img src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="">
