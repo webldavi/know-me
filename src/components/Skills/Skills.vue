@@ -1,7 +1,7 @@
 <template>
     <div class="w-full min-h-screen flex flex-col items-center justify-center gap-4 py-2">
         <Separator name="Habilidades" />
-        <div class="w-full h-max flex flex-col flex-1 flex-1 md:flex-row items-center justify-start gap-12 md:gap-0 pb-4 sm:px-4">
+        <div class="w-full h-max flex flex-col flex-1 flex-1 md:flex-row items-center justify-center gap-12 md:gap-0 pb-4 sm:px-4">
             <div class="sm:w-96 lg:w-128 flex flex-row flex-wrap w-full gap-2 sm:gap-4 sm:p-4 justify-center">
                 <div @mouseover="updateSkill('html')" @mouseleave="removeSkill()"
                 class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
