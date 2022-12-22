@@ -31,5 +31,6 @@
     #nav{
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
+        box-shadow: 15px -12px 20px 0px rgb(255 255 255 / 42%) inset;
     }
 </style>

@@ -1,100 +1,120 @@
 <template>
     <div class="w-full min-h-screen flex flex-col items-center justify-center gap-4 py-2">
-        <Separator name="Habilidades"/>
-        <div class="w-full h-max flex flex-1 flex-col md:flex-row items-center md:justify-start gap-4 px-4">
-            <div class=" md:w-128 flex flex-row flex-wrap w-full gap-4 p-4 justify-center">
-                <div @mouseover="updateSkill('html')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3291/3291670.png" alt="">
+        <Separator name="Habilidades" />
+        <div class="w-full h-max flex flex-col flex-1 flex-1 md:flex-row items-center justify-start gap-12 md:gap-0 pb-4 sm:px-4">
+            <div class="sm:w-96 lg:w-128 flex flex-row flex-wrap w-full gap-2 sm:gap-4 sm:p-4 justify-center">
+                <div @mouseover="updateSkill('html')" @mouseleave="removeSkill()"
+                class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3291/3291670.png" class="rounded-lg" alt="" />
+                    <span>HTML</span>
                 </div>
-                <div id="css" @mouseover="updateSkill('css')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
-                    <img id="cssimg" src="../../assets/css.png" alt="">
+                <div id="css" @mouseover="updateSkill('css')" @mouseleave="removeSkill()"
+                class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
+                    <img id="cssimg" src="/css.png" alt="" class="rounded-lg" />
+                    <span>CSS</span>
                 </div>
-                <div @mouseover="updateSkill('js')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="">
+                <div @mouseover="updateSkill('js')" @mouseleave="removeSkill()"
+                class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="rounded-lg" alt="" />
+                    <span>JavaScript</span>
                 </div>
-                <div @mouseover="updateSkill('vue')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 bg-gray-700 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
-                    <img src="https://br.vuejs.org/images/logo.svg" alt="">
+                <div @mouseover="updateSkill('vue')" @mouseleave="removeSkill()"
+                    class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png" alt="" class="rounded-lg" />
+                    <span>Vuejs</span>
                 </div>
-                <div @mouseover="updateSkill('react')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
-                    <img src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="">
+                <div @mouseover="updateSkill('react')" @mouseleave="removeSkill()"
+                    class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
+                    <img src="https://ionicframework.com/docs/icons/logo-react-icon.png" class="rounded-lg" alt="" />
+                    <span>Reactjs</span>
                 </div>
-                <div @mouseover="updateSkill('ts')" @mouseleave="removeSkill()" class="w-24 h-24 md:w-36 md:h-36 cursor-pointer border-2 border-gray-300 rounded-full overflow-hidden transition hover:scale-110">
-                    <img src="https://www.svgrepo.com/show/303600/typescript-logo.svg" alt="">
+                <div @mouseover="updateSkill('ts')" @mouseleave="removeSkill()"
+                class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
+                    <img src="https://www.svgrepo.com/show/303600/typescript-logo.svg" class="rounded-lg" alt="" />
+                    <span>TypeScript</span>
                 </div>
             </div>
-            <div class="w-96 flex-1 flex flex-col gap-2 font-mono text-center text-white p-2 bg-gray-700 rounded-lg" id="Skill">
+            <div class="w-full sm:w-96 h-64 flex flex-col gap-2 font-mono text-center text-white p-2 bg-gray-900 rounded-lg"
+                id="Skill">
                 <div class="text-2xl text-green-300">
-                    {{skillName}}
+                    {{ skillName }}
                 </div>
                 <div class="text-xl text-pink-300">
-                    {{skillDesc}}
+                    {{ skillDesc }}
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import Separator from '../Separator.vue';
-export default{
-    name: 'Skills',
-    data(){
-        return{
-            skillName: 'Minhas Habilidades',
-            skillDesc: '/* Essas são as minhas Habilidades */',
+import Separator from "../Separator.vue";
+export default {
+    name: "Skills",
+    data() {
+        return {
+            skillName: "Minhas Habilidades",
+            skillDesc: "/* Essas são as minhas Habilidades */",
             listSkill: {
-                js:{
-                    skillName: 'JavaScript',
-                    skillDesc: 'Javascript é uma linguagem interpretada pelo navegador, ou seja, ela é client-side, vulgo Front-end.'
+                js: {
+                    skillName: "JavaScript",
+                    skillDesc:
+                        "Javascript é uma linguagem interpretada pelo navegador, ou seja, ela é client-side, vulgo Front-end.",
                 },
-                html:{
-                    skillName: 'HTML5',
-                    skillDesc: 'HTML5 é a sigla para HyperText Markup Language, linguagem de marcação usada para criar a estrutura de uma página.'
+                html: {
+                    skillName: "HTML5",
+                    skillDesc:
+                        "HTML5 é a sigla para HyperText Markup Language, linguagem de marcação usada para criar a estrutura de uma página.",
                 },
-                css:{
-                    skillName: 'CSS3',
-                    skillDesc: 'CSS3, uma linguagem de estilização usada para estilizar e dar forma as estruturas de uma página.'
+                css: {
+                    skillName: "CSS3",
+                    skillDesc:
+                        "CSS3, uma linguagem de estilização usada para estilizar e dar forma as estruturas de uma página.",
                 },
-                vue:{
-                    skillName: 'VueJS',
-                    skillDesc: 'VueJs, um Framework usado para criar páginas SPA(single page application).'
+                vue: {
+                    skillName: "VueJS",
+                    skillDesc:
+                        "VueJs, um Framework usado para criar páginas SPA(single page application).",
                 },
-                react:{
-                    skillName: 'ReactJS',
-                    skillDesc: 'ReactJS é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
+                react: {
+                    skillName: "ReactJS",
+                    skillDesc:
+                        "ReactJS é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
                 },
-                ts:{
-                    skillName: 'TypeScript',
-                    skillDesc: 'É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.'
+                ts: {
+                    skillName: "TypeScript",
+                    skillDesc:
+                        "É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
                 },
-            }
-        }
+            },
+        };
     },
-    components:{
-        Separator
+    components: {
+        Separator,
     },
-    methods:{
-        updateSkill(skill){
-            this.skillName = this.listSkill[skill].skillName
-            this.skillDesc = this.listSkill[skill].skillDesc
+    methods: {
+        updateSkill(skill) {
+            this.skillName = this.listSkill[skill].skillName;
+            this.skillDesc = this.listSkill[skill].skillDesc;
         },
-        removeSkill(){
-            this.skillName = 'Minhas Habilidades';
-            this.skillDesc = '/* Essas são as minhas Habilidades */';
-        }
-    }
-}
+        removeSkill() {
+            this.skillName = "Minhas Habilidades";
+            this.skillDesc = "/* Essas são as minhas Habilidades */";
+        },
+    },
+};
 </script>
 
 <style>
-#Skill{
+#Skill {
     animation: Elevation 3s infinite;
-    box-shadow: 0px 0px 16px 0px  rgb(55 65 81);
-    border: 2px solid  rgb(77, 89, 109);
+    box-shadow: 0px 0px 16px 0px rgb(39 46 58);
+    border: 2px solid rgb(38, 44, 56);
 }
-#css{
-    background-color: #51A4FF;
-}
-#cssimg{
-    scale: .65;
+
+/* #css {
+  background-color: #51a4ff;
+} */
+#cssimg {
+    scale: 0.65;
 }
 </style>

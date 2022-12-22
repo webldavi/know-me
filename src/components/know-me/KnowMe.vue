@@ -5,21 +5,21 @@
         </div>
         <div class="flex flex-col md:flex-row items-center justify-center gap-12">
             <div>
-                <img width="200" height="200" class="border-2 border-white rounded-xl" src="../../assets/photo.jpg" alt="">
+                <img width="200" height="200" class="border-2 border-white rounded-xl" src="/photo.jpg" alt="">
             </div>
-            <div class="font-mono text-white w-72 sm:w-96 flex flex-col gap-2">
+            <div class="font-mono text-white w-72 sm:w-96 flex flex-col gap-4">
                 <span class="w-full break-words text-xl text-justify sm:text-left">
                     Meu nome é Luís Daví, tenho 18 anos🤓 e sou um estudante autodidata de engenharia de software 🚀
                 </span>
                 <div class="flex flex-row gap-2">
                     <div @click="toSocial('https://github.com/webldavi')" class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
-                        <img src="../../assets/github.png" alt="">
+                        <img src="/github.png" alt="">
                     </div>
                     <div @click="toSocial('mailto:luisdavi.contato@gmail.com')" class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
-                        <img src="../../assets/Email.png" alt="">
+                        <img src="/Email.png" alt="">
                     </div>
                     <div @click="toSocial('https://instagram.com/_eudaviii')" class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
-                        <img src="../../assets/instagram.png" alt="">
+                        <img src="/instagram.png" alt="">
                     </div>
                     <div @click="toSocial('tel:84999153350')" class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full">

@@ -9,7 +9,7 @@
             </div>
         </div>
         <div>
-            <img width="200" height="200" id="AnimationPhoto" class="rounded-full border-2 border-gray-300 " src="../../assets/photo.jpg"/>
+            <img width="200" height="200" id="AnimationPhoto" class="rounded-full border-2 border-gray-300 " src="/photo.jpg"/>
         </div>
     </div>
 </template>
