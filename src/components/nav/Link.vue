@@ -1,23 +1,20 @@
 <template>
     <div class="border-b-2 border-transparent transition hover:border-gray-300 cursor-pointer" @click="Scroll()">
-        {{name}}
+        {{ props.name }}
     </div>
-    
+
 </template>
-<script>
-export default{
-    name: 'Link',
-    props:{
-        name: String,
-        scroll: Number
-    },
-    methods:{
-        Scroll(){
-            window.scroll({
-                top: this.scroll,
-                behavior: 'smooth'
-            })
-        }
-    }
+<script setup>
+import { defineProps } from 'vue';
+const props = defineProps({
+    name: String,
+    scroll: Number
+})
+function Scroll() {
+    window.scroll({
+        top: props.scroll,
+        behavior: 'smooth'
+    })
 }
+
 </script>

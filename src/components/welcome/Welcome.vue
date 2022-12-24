@@ -13,10 +13,7 @@
         </div>
     </div>
 </template>
-<script>
-    export default{
-        name: 'Welcome'
-    }
+<script setup>
 </script>
 <style>
     @keyframes Elevation{
