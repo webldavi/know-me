@@ -3,7 +3,7 @@
         <Separator name="Habilidades" />
         <div
             class="w-full h-max flex flex-col flex-1 flex-1 md:flex-row items-center justify-center gap-12 md:gap-0 pb-4 sm:px-4">
-            <div class="sm:w-96 lg:w-128 flex flex-row flex-wrap w-full gap-2 sm:gap-4 sm:p-4 justify-center">
+            <div class="md:w-128 flex flex-row flex-wrap w-full gap-2 sm:gap-4 sm:p-4 justify-center">
                 <div @mouseover="updateSkill('html')" @mouseleave="removeSkill()"
                     class="w-36 h-44 text-gray-300 font-mono font-bold text-xl cursor-pointer border-2 border-gray-600 rounded-lg overflow-hidden transition hover:scale-110 flex flex-col gap-2 justify-center items-center p-2">
                     <img src="https://cdn-icons-png.flaticon.com/512/3291/3291670.png" class="rounded-lg" alt="" />
@@ -36,7 +36,7 @@
                     <span>TypeScript</span>
                 </div>
             </div>
-            <div class="w-full sm:w-96 h-64 flex flex-col gap-2 font-mono text-center text-white p-2 bg-gray-900 rounded-lg"
+            <div class="w-5/6 h-max sm:w-96 h-64 mx-2 flex flex-col gap-2 font-mono text-center text-white p-2 bg-gray-900 rounded-lg"
                 id="Skill">
                 <div class="text-2xl text-green-300">
                     {{ skillName }}
