@@ -24,7 +24,7 @@ import { ref } from "vue";
 const ShowProjectsButtonText = ref("Mostrar mais");
 const showMoreProjectValidation = ref(false);
 const projectsListLimit = ref(3);
-const Projects = ref([
+const Projects = ref([ 
     {
         name: "Turing Community",
         desc: "Uma comunidade de programação no discord para todos desfrutarem.",

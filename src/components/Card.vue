@@ -56,6 +56,6 @@ function toProject() {
 </script>
 <style>
 #Card {
-    height: 32rem;
+    height: 32rem; 
 }
 </style>
