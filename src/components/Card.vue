@@ -24,7 +24,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                 </svg>
-                <span>Repositório</span>
+                <span>{{ props.typeLinkText }}</span>
             </div>
         </div>
     </div>
@@ -34,10 +34,23 @@
 const props = defineProps({
     name: String,
     desc: String,
-    rep: String
+    rep: {
+        type: String,
+        required: false
+    },
+    typeLinkText: String,
+    toLink: Boolean,
+    link: {
+        type: String,
+        required: false
+    }
 })
 function toProject() {
-    window.open(`https://github.com/webldavi/${props.rep}`, "_blank")
+    if(props.toLink == true){
+        window.open(props.link, "_blank")
+    }else {
+        window.open(`https://github.com/webldavi/${props.rep}`, "_blank")
+    }
 }
 
 </script>
