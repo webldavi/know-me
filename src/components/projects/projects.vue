@@ -70,7 +70,7 @@ const Projects = ref([
 function showProjects() {
     if (showMoreProjectValidation.value == false) {
         ShowProjectsButtonText.value  = "Mostrar menos"
-        projectsListLimit.value  = this.Projects.length
+        projectsListLimit.value  = Projects.length
         showMoreProjectValidation.value  = true;
     } else {
         showMoreProjectValidation.value  = false;
