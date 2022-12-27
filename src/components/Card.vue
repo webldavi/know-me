@@ -46,6 +46,7 @@ const props = defineProps({
     }
 })
 function toProject() {
+    console.log(props.link)
     if(props.toLink == true){
         window.open(props.link, "_blank")
     }else {

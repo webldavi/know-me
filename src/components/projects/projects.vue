@@ -23,8 +23,17 @@ import { ref } from "vue";
 
 const ShowProjectsButtonText = ref("Mostrar mais");
 const showMoreProjectValidation = ref(false);
-const projectsListLimit = ref(3);
-const Projects = ref([ 
+const projectsListLimit = ref(4);
+const Projects = ref([
+    {
+        name: "Laravel course page",
+        desc: "Este foi um freelancer que fiz, resumidamente uma pagina para um curso gratuito de laravel",
+        rep: "",
+        nameFile: "laravelCourse",
+        typeLinkText: "Em breve",
+        toLink: true,
+        link: "https://cursolaravel.com.br/",
+    },
     {
         name: "Turing Community",
         desc: "Uma comunidade de programação no discord para todos desfrutarem.",
@@ -69,13 +78,13 @@ const Projects = ref([
 ]);
 function showProjects() {
     if (showMoreProjectValidation.value == false) {
-        ShowProjectsButtonText.value  = "Mostrar menos"
-        projectsListLimit.value  = Projects.length
-        showMoreProjectValidation.value  = true;
+        ShowProjectsButtonText.value = "Mostrar menos"
+        projectsListLimit.value = Projects.length
+        showMoreProjectValidation.value = true;
     } else {
-        showMoreProjectValidation.value  = false;
-        projectsListLimit.value  = 3;
-        ShowProjectsButtonText.value  = "Mostrar mais";
+        showMoreProjectValidation.value = false;
+        projectsListLimit.value = 3;
+        ShowProjectsButtonText.value = "Mostrar mais";
     }
 }
 </script>
