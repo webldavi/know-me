@@ -13,19 +13,19 @@
                 </span>
                 <div class="flex flex-row gap-2">
                     <div @click="toSocial('https://github.com/webldavi')"
-                        class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
+                        class="w-12 h-12 sm:w-16 sm:h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
                         <img src="/github.png" alt="">
                     </div>
                     <div @click="toSocial('mailto:luisdavi.contato@gmail.com')"
-                        class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
+                        class="w-12 h-12 sm:w-16 sm:h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
                         <img src="/Email.png" alt="">
                     </div>
                     <div @click="toSocial('https://instagram.com/_eudaviii')"
-                        class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
+                        class="w-12 h-12 sm:w-16 sm:h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
                         <img src="/instagram.png" alt="">
                     </div>
                     <div @click="toSocial('tel:84999153350')"
-                        class="w-16 h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
+                        class="w-12 h-12 sm:w-16 sm:h-16 p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-full h-full">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -33,7 +33,7 @@
                         </svg>
                     </div>
                     <div @click="toSocial('https://discord.gg/Tp4p3n7N69')"
-                        class="w-16 h-16 flex items-center justify-center overflow-hidden p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
+                        class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center overflow-hidden p-2 border-2 transition border-gray-600 text-white bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700">
                         <img src="/discord.png" class="w-full h-full"/>
                     </div>
                 </div>
