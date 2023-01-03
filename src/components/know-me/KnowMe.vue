@@ -3,13 +3,13 @@
         <div class="w-full flex flex-row gap-2 items-center justify-center font-mono text-white">
             <Separator name="Sobre Mim" />
         </div>
-        <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+        <div class="flex flex-col md:flex-row items-center justify-center md:items-start gap-12">
             <div>
                 <img width="200" height="200" class="border-2 border-white rounded-xl" src="/photo.jpg" alt="">
             </div>
             <div class="font-mono text-white w-72 sm:w-96 flex flex-col gap-4">
-                <span class="w-full break-words text-xl text-justify sm:text-left">
-                    Meu nome é Luís Daví, tenho 18 anos🤓 e sou um estudante autodidata de engenharia de software 🚀
+                <span class="w-full break-words text-md text-justify sm:text-left">
+                    Oi, eu sou o Luís Daví e tenho 18 anos. Sou apaixonado por tecnologia e estou sempre buscando me atualizar na área de engenharia de software. Sou autodidata e estou sempre pronto para aprender mais.
                 </span>
                 <div class="flex flex-row gap-2">
                     <div @click="toSocial('https://github.com/webldavi')"
