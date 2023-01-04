@@ -1,6 +1,6 @@
 <template>
     <div id="Card"
-        class="w-72 border-2 border-gray-300 rounded-lg flex flex-col justify-between gap-2 p-2 font-mono text-white">
+        class="w-72 transition all border-2 hover:scale-105 border-gray-300 rounded-lg flex flex-col justify-between gap-2 p-2 font-mono text-white">
         <slot></slot>
         <div class="text-2xl">
             {{ props.name }}
