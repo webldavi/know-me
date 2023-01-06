@@ -1,31 +1,16 @@
 <template>
   <div class="w-full min-h-screen flex flex-col gap-4 py-2">
     <Separator name="Projetos" />
-    <div
-      class="w-full h-max mt-4 flex flex-col items-center justify-center gap-12 pb-8 transition-all"
-    >
-      <div
-        class="w-full items-center justify-center flex flex-row flex-wrap gap-8 px-4"
-      >
-        <Card
-          v-for="(Project, index) in Projects.slice(0, projectsListLimit)"
-          :key="index"
-          :type-link-text="Project.typeLinkText"
-          :name="Project.name"
-          :desc="Project.desc"
-          :rep="Project.rep"
-          :to-link="Project.toLink"
-          :link="Project.link"
-        >
+    <div class="w-full h-max mt-4 flex flex-col items-center justify-center gap-12 pb-8 transition-all">
+      <div class="w-full items-center justify-center flex flex-row flex-wrap gap-8 px-4">
+        <Card v-for="(Project, index) in Projects.slice(0, projectsListLimit)" :key="index"
+          :type-link-text="Project.typeLinkText" :name="Project.name" :desc="Project.desc" :rep="Project.rep"
+          :to-link="Project.toLink" :link="Project.link">
           <img :src="`/${Project.nameFile}.png`" class="rounded-lg" />
         </Card>
       </div>
-      <button
-        @click="showProjects()"
-        id="showMoreProjects"
-        v-if="Projects.length >= 4"
-        class="p-4 bg-gray-900 rounded-lg transition-all text-lg font-bold text-white font-mono text-center border-2 border-gray-800 cursor-pointer"
-      >
+      <button @click="showProjects()" id="showMoreProjects" v-if="Projects.length >= 4"
+        class="p-4 bg-gray-900 rounded-lg transition-all text-lg font-bold text-white font-mono text-center border-2 border-gray-800 cursor-pointer">
         {{ ShowProjectsButtonText }}
       </button>
     </div>
@@ -40,6 +25,15 @@ const ShowProjectsButtonText = ref("Mostrar mais");
 const showMoreProjectValidation = ref(false);
 const projectsListLimit = ref(4);
 const Projects = ref([
+  {
+    name: "n0d3rr Syntax Highlighter",
+    desc: "Este é um editor de código cuja o objetivo é facilitar a escrita de documentações em exeplos de códigos",
+    rep: "",
+    nameFile: "NSH",
+    typeLinkText: "Link",
+    toLink: true,
+    link: "https://n0d3rr-sh.vercel.app/#/",
+  },
   {
     name: "Laravel course page",
     desc: "Este foi um freelancer que fiz, resumidamente uma pagina para um curso gratuito de laravel",

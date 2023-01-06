@@ -47,9 +47,9 @@ const props = defineProps({
 })
 function toProject() {
     console.log(props.link)
-    if(props.toLink == true){
+    if (props.toLink == true) {
         window.open(props.link, "_blank")
-    }else {
+    } else {
         window.open(`https://github.com/webldavi/${props.rep}`, "_blank")
     }
 }
@@ -57,6 +57,6 @@ function toProject() {
 </script>
 <style>
 #Card {
-    height: 32rem; 
+    height: 32rem;
 }
 </style>

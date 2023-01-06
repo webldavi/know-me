@@ -103,7 +103,7 @@ function removeSkill() {
 #Skill {
     animation: Elevation 3s infinite;
     /* box-shadow: 0px 0px 16px 0px rgb(134 239 172); */
-    box-shadow: 0px 0px 31px 3px rgba(134, 239, 173, 0.281);
+    box-shadow: 0px 0px 31px 3px rgba(155, 155, 155, 0.281);
     border: 2px solid rgba(22, 126, 69, 0);
 }
 
