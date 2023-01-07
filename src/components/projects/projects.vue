@@ -10,7 +10,7 @@
         </Card>
       </div>
       <button @click="showProjects()" id="showMoreProjects" v-if="Projects.length >= 4"
-        class="p-4 bg-gray-900 rounded-lg transition-all text-lg font-bold text-white font-mono text-center border-2 border-gray-800 cursor-pointer">
+        class="p-4 bg-black rounded-lg transition-all text-lg font-bold text-white font-mono text-center border-2 border-gray-800 cursor-pointer">
         {{ ShowProjectsButtonText }}
       </button>
     </div>

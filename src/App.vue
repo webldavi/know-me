@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full 'q' min-h-screen bg-gray-900 flex flex-col">
+  <div class="w-full 'q' min-h-screen bg-black flex flex-col">
     <Nav />
     <Welcome />
     <KnowMe />
