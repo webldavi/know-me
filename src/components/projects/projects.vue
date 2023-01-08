@@ -6,7 +6,7 @@
         <Card v-for="(Project, index) in Projects.slice(0, projectsListLimit)" :key="index"
           :type-link-text="Project.typeLinkText" :name="Project.name" :desc="Project.desc" :rep="Project.rep"
           :to-link="Project.toLink" :link="Project.link">
-          <img :src="`/${Project.nameFile}.png`" class="rounded-lg" />
+          <img :src="`/${Project.nameFile}.png`" class="rounded-lg h-64" />
         </Card>
       </div>
       <button @click="showProjects()" id="showMoreProjects" v-if="Projects.length >= 4"
