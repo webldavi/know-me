@@ -24,22 +24,22 @@ export default function KnowmeCard() {
           </p>
         </div>
         <div className="contacts">
-          <div onClick={(e) => {
+          <div onClick={() => {
                 window.location.href = "/Luis_Davi_Rebouças.pdf";
               }}>
             <img src={docImg} alt="" />
           </div>
-          <div onClick={(e) => {
+          <div onClick={() => {
                 window.location.href = "https://github.com/webldavi";
               }}>
             <img src={githubImg} alt="" />
           </div>
-          <div onClick={(e) => {
+          <div onClick={() => {
                 window.location.href = "mailto:luisdavi.contato@gmail.com";
               }}>
             <img src={emailImg} alt="" />
           </div>
-          <div onClick={(e) => {
+          <div onClick={() => {
                 window.location.href = "https://instagram.com/lu1s.dev";
               }}>
             <img src={instagramImg} alt="" />
