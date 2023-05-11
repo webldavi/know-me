@@ -1,0 +1,40 @@
+.knowmecard-container{
+    @apply w-full h-max p-4 rounded-[25px] flex flex-col gap-6 border-2 border-white text-white lg:flex-row lg:h-[34rem]
+}
+.knowmecard-container > .bg-gradient{
+    background: linear-gradient(70deg, #35495e 0%, #42b883 100%);
+    @apply w-full h-40 rounded-t-[25px] relative lg:w-[80rem] lg:h-full lg:rounded-t-[0px] lg:rounded-l-[25px]
+}
+.knowmecard-container > .bg-gradient > div{
+    @apply w-full h-full absolute flex items-end justify-center lg:items-center lg:justify-end
+}
+.knowmecard-container > .bg-gradient > div > img{
+    box-shadow: 0px 0px 0px 20px #030712;
+    @apply rounded-full w-36 h-36 mb-[-4.5rem] lg:mr-[-4.5rem] lg:mt-[-50px] border border-white
+}
+
+
+
+.knowmecard-text{
+    @apply pt-[4rem] lg:pl-[4.5rem] flex flex-col gap-8 h-full justify-between
+}
+.knowmecard-container > .knowmecard-text > .knowme-info{
+    @apply flex flex-col gap-8 lg:pt-0
+}
+.knowmecard-container > .knowmecard-text > h1{
+    @apply text-4xl lg:text-6xl
+}
+.knowmecard-container > .knowmecard-text > .knowme-info > p{
+    @apply text-3xl opacity-75
+}
+
+
+.knowmecard-container > .knowmecard-text > .contacts{
+    @apply w-max h-max flex flex-row gap-4 py-2
+}
+.knowmecard-container > .knowmecard-text > .contacts > div{
+    @apply w-max h-max p-4 flex items-center justify-center border border-white rounded-[10px] cursor-pointer
+}
+.knowmecard-container > .knowmecard-text > .contacts > div > img{
+    @apply w-6 h-6
+}

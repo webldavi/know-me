@@ -1,0 +1,7 @@
+.knowme-section{
+    @apply w-full h-max flex flex-col gap-12 items-center justify-center p-2 lg:px-32
+}
+
+.knowme-section> h1{
+    @apply text-green-500 text-6xl
+}

@@ -1,0 +1,28 @@
+@keyframes jump {
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.skills{
+    @apply w-full h-max flex flex-col items-center justify-center gap-16 px-2
+}
+.skills > h1{
+    @apply text-green-500 text-6xl
+}
+.skills > .SkillsContainer{
+    @apply w-full flex flex-row flex-wrap gap-12 justify-center items-center
+}
+.skills > .SkillsContainer > div{
+    animation: jump 5s infinite;
+    @apply w-40 h-40 
+}
+.skills > .SkillsContainer > div > img{
+    @apply w-full h-full 
+}

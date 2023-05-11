@@ -1,0 +1,9 @@
+.welcomeContainer{
+    @apply w-full h-[50vh] text-white flex flex-col justify-center items-center px-16
+}
+.welcomeContainer > h1{
+    @apply text-4xl lg:text-6xl
+}
+.welcomeContainer > span{
+    @apply text-3xl lg:text-5xl
+}

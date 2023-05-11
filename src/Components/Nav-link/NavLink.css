@@ -1,0 +1,3 @@
+.navlink{
+    @apply h-max w-max text-xl border-b border-transparent hover:border-white px-2 py-1
+}
