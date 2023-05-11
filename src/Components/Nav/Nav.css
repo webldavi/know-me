@@ -13,5 +13,5 @@
 
 
 .nav > .navigator{
-    @apply flex flex-row gap-4 hidden
+    @apply flex flex-row gap-4 hidden md:flex
 }
