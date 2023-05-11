@@ -1,8 +1,6 @@
 import "./Skills.css";
 import SkillsList from "./SkillsList";
-import { useState } from "react";
 export default function Skills() {
-  const [count, setCount] = useState(0);
   return (
     <section className="skills">
       <h1>#Habilidades</h1>

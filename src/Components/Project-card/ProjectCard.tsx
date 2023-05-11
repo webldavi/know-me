@@ -47,8 +47,8 @@ export default function ProjectCard(props: props) {
             </svg>
 
             <span
-              onClick={(e) => {
-                window.location.href = props.link;
+              onClick={() => {
+                window.location.href = `${props.link}`;
               }}
             >
               Link
