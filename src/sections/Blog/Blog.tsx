@@ -8,14 +8,19 @@ export default function Welcome() {
             title: "",
             description: "",
             tag_list: [],
+            canonical_url: "",
         },
     ]);
+
     function getPostsData() {
         fetch("https://dev.to/api/articles?username=vuedavi")
             .then((res) => res.json())
             .then((data) => {
                 setPosts(data);
             });
+    }
+    function redirectUser(url: string) {
+        window.open(url, "_blank");
     }
     useEffect(() => {
         getPostsData();
@@ -36,7 +41,13 @@ export default function Welcome() {
                                         return <div>#{tag}</div>;
                                     })}
                                 </div>
-                                <button>Saiba Mais</button>
+                                <button
+                                    onClick={() =>
+                                        redirectUser(post.canonical_url)
+                                    }
+                                >
+                                    Saiba Mais
+                                </button>
                             </div>
                         </div>
                     );
