@@ -1,5 +1,5 @@
 .nav{
-    @apply w-full h-max flex flex-row justify-between items-center px-4 py-2 text-white border-b-2 border-white backdrop-blur-md lg:px-32
+    @apply w-full h-max fixed top-0 z-50 flex flex-row justify-between items-center px-4 py-2 text-white border-b-2 border-white backdrop-blur-md lg:px-32
 }
 .nav > .brand{
     @apply flex flex-col

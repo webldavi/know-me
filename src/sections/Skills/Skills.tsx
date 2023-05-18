@@ -1,24 +1,19 @@
 import "./Skills.css";
 import SkillsList from "./SkillsList";
 export default function Skills() {
-        return (<section className="skills">
+    return (
+        <section className="skills" id="skills">
             <h1>#Habilidades</h1>
             <div className="SkillsContainer">
-                {
-                SkillsList.map((s, index) => {
-                            return(< div key = {
-                                index
-                            } > <img src={
-                                    s.link
-                                }
-                                alt={
-                                    s.skillName
-                                }/>
+                {SkillsList.map((s, index) => {
+                    return (
+                        <div key={index}>
+                            {" "}
+                            <img src={s.link} alt={s.skillName} />
                         </div>
-                        );
-                    }
-                )
-            } </div>
+                    );
+                })}{" "}
+            </div>
         </section>
     );
 }
