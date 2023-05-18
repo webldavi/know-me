@@ -1,17 +1,35 @@
-.nav{
-    @apply w-full h-max fixed top-0 z-50 flex flex-row justify-between items-center px-4 py-2 text-white border-b-2 border-white backdrop-blur-md lg:px-32
+.nav {
+    @apply w-full h-max fixed top-0 z-50 flex flex-row justify-between items-center px-4 py-2 text-white border-b-2 border-white backdrop-blur-md lg:px-32;
 }
-.nav > .brand{
-    @apply flex flex-col
+.nav > .brand {
+    @apply flex flex-col;
 }
-.nav > .brand > h1{
-    @apply text-3xl
+.nav > .brand > h1 {
+    @apply text-3xl;
 }
-.nav > .brand{
-    @apply text-xl
+.nav > .brand {
+    @apply text-xl;
 }
 
+.nav > .navigator {
+    @apply flex flex-row gap-4 hidden md:flex;
+}
+.nav > button{
+    @apply w-max h-max flex md:hidden
+}
 
-.nav > .navigator{
-    @apply flex flex-row gap-4 hidden md:flex
+@keyframes drawer {
+    from {
+        opacity: 0;
+        right: -100vw;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+.nav > .navigatorMobile {
+    animation: drawer 1.5s;
+    @apply absolute overflow-hidden right-0 -bottom-[70vh] py-16 z-50 h-[70vh] w-max flex flex-col justify-between px-8 border-b-2 border-l-2 border-t-2 rounded-l-[40px] border-white shadow-2xl bg-gray-950 shadow-gray-400/25;
 }
