@@ -1,9 +1,10 @@
 .knowmecard-container{
-    @apply w-full h-max p-4 rounded-[25px] flex flex-col gap-6 border-2 border-white text-white lg:flex-row lg:h-[34rem]
+    
+    @apply w-full h-max p-4 rounded-[25px] flex flex-col gap-6 border-2 border-white text-white lg:flex-row lg:h-[34rem] bg-gray-950
 }
 .knowmecard-container > .bg-gradient{
     background: linear-gradient(70deg, #35495e 0%, #42b883 100%);
-    @apply w-full h-40 rounded-t-[25px] relative lg:w-[80rem] lg:h-full lg:rounded-t-[0px] lg:rounded-l-[25px]
+    @apply w-full h-40 relative rounded-[25px] lg:w-[80rem] lg:h-full
 }
 .knowmecard-container > .bg-gradient > div{
     @apply w-full h-full absolute flex items-end justify-center lg:items-center lg:justify-end

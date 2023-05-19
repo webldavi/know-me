@@ -14,7 +14,7 @@ export default function Welcome() {
     ]);
 
     function getPostsData() {
-        fetch("https://dev.to/api/articles?username=vuedavi")
+        fetch("https://dev.to/api/articles?username=webdavi")
             .then((res) => res.json())
             .then((data) => {
                 console.log("data", data);

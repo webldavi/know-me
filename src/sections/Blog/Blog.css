@@ -9,7 +9,7 @@
 }
 
 .blogContainer > div > div {
-    @apply max-w-sm flex flex-col gap-4 overflow-hidden rounded-xl p-5 bg-gray-900 shadow-md duration-200;
+    @apply max-w-sm h-[40rem] flex flex-col gap-4 overflow-hidden rounded-xl p-5 bg-gray-900 shadow-md duration-200;
 }
 .blogContainer > div > div > img {
     @apply h-52 w-full rounded-xl;

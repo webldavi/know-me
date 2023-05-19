@@ -10,6 +10,7 @@ export default function App() {
     return (
         <>
             <Nav />
+            <div className="backgroundImage"></div>
             <main className="main">
                 <Welcome />
                 <Knowme />

@@ -4,7 +4,7 @@
 }
 
 .project-card > img{
-    @apply w-full rounded-[25px] border border-white sm:w-96 lg:w-96
+    @apply w-full rounded-[25px] border border-white sm:w-96 lg:w-96 bg-gray-950
 }
 
 .project-card> div{
