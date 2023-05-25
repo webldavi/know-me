@@ -5,7 +5,7 @@
     @apply text-green-500 text-6xl
 }
 .projects-section > .projectList{
-    @apply w-full flex flex-row flex-wrap gap-32 items-center justify-center lg:px-32 lg:justify-center
+    @apply w-full flex flex-row flex-wrap gap-32 items-center justify-center px-6 lg:px-32 lg:justify-center
 }
 .projects-section > button{
     @apply text-4xl hover:scale-110

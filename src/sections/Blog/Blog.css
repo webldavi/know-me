@@ -9,7 +9,10 @@
 }
 
 .blogContainer > div > div {
-    @apply max-w-sm h-[40rem] flex flex-col gap-4 overflow-hidden rounded-xl p-5 bg-gray-900 shadow-md duration-200;
+    @apply max-w-[26rem] h-[40rem] flex flex-col gap-4 overflow-hidden rounded-xl p-5 bg-slate-900 duration-200;
+}
+.blogContainer > div > div {
+    box-shadow: inset 0px 0px 10px 2px rgb(30 41 59);
 }
 .blogContainer > div > div > img {
     @apply h-52 w-full rounded-xl;
@@ -30,5 +33,8 @@
     @apply rounded-full p-1 bg-gray-950 py-2 px-3 border border-white/25;
 }
 .blogContainer > div > div > div > button {
-    @apply w-full rounded-md bg-emerald-600  py-2 text-indigo-100 hover:bg-emerald-700 hover:shadow-md duration-75;
+    @apply w-full rounded-md bg-sky-500 border border-gray-400 py-2 text-indigo-100 hover:border-white hover:bg-sky-700 duration-300;
+}
+.blogContainer > div > div > div > button:hover{
+    box-shadow: 0px 0px 15px 1px #0ea5e9;
 }
