@@ -3,7 +3,7 @@
     @apply w-full h-max p-4 rounded-[25px] flex flex-col gap-6 border-2 border-white text-white lg:flex-row lg:h-[34rem] bg-gray-950
 }
 .knowmecard-container > .bg-gradient{
-    background: linear-gradient(70deg, #35495e 0%, #42b883 100%);
+    background: linear-gradient(70deg, rgba(41, 108, 253, 0.8) 0%, rgba(55, 255, 125, 0.8) 100%);
     @apply w-full h-40 relative rounded-[25px] lg:w-[80rem] lg:h-full
 }
 .knowmecard-container > .bg-gradient > div{

@@ -9,7 +9,13 @@ export default function Skills() {
                     return (
                         <div key={index}>
                             {" "}
-                            <img src={s.link} alt={s.skillName} />
+                            <img src={s.link} alt={s.skillName} data-tooltip-name={s.skillName}/>
+                            <div className="tooltip">
+                                <div>
+                                    <div></div>
+                                </div>
+                                <p>{s.skillName}</p>
+                            </div>
                         </div>
                     );
                 })}{" "}

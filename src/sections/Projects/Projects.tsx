@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProjectCard from "../../Components/Project-card/ProjectCard";
 import "./Projects.css";
-import ProjectsList from "./ProjectsList";
+import ProjectsList from "../../json/ProjectsList";
 export default function Projects() {
     const [countProjects, setCountProjects] = useState(3);
     const [textProjects, setTextProjects] = useState("Ver mais");

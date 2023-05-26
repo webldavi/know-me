@@ -11,18 +11,30 @@
 
 
 .skills{
-    @apply w-full h-max flex flex-col items-center justify-center gap-16 px-2
+    @apply w-full h-max flex flex-col items-center justify-center gap-24 px-2
 }
 .skills > h1{
     @apply text-green-500 text-6xl
 }
 .skills > .SkillsContainer{
-    @apply w-full flex flex-row flex-wrap gap-12 justify-center items-center
+    @apply w-full flex flex-row flex-wrap gap-x-12 gap-y-24 justify-center items-center
 }
 .skills > .SkillsContainer > div{
     animation: jump 5s infinite;
-    @apply w-40 h-40 
+    @apply w-40 h-40 flex flex-col gap-6 items-center justify-center
 }
 .skills > .SkillsContainer > div > img{
-    @apply w-full h-full 
+    @apply w-full h-full rounded-xl
+}
+.skills > .SkillsContainer > div > img ~ .tooltip{
+    @apply w-max opacity-0 bg-slate-900 p-2 border border-white text-white rounded-lg scale-0 relative
+}
+.skills > .SkillsContainer > div > img ~ .tooltip > div{
+    @apply w-[calc(100%-1rem)] h-max flex justify-center absolute z-50 items-center -top-[0.58rem]
+}
+.skills > .SkillsContainer > div > img ~ .tooltip > div > div {
+    @apply p-2 bg-slate-900 h-max w-max rotate-45 border-l border-t border-white
+}
+.skills > .SkillsContainer > div > img:hover ~ .tooltip{
+    @apply  opacity-100 scale-105
 }
