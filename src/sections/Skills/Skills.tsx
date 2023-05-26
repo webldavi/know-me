@@ -1,5 +1,5 @@
 import "./Skills.css";
-import SkillsList from "./SkillsList";
+import SkillsList from "../../json/SkillsList";
 export default function Skills() {
     return (
         <section className="skills" id="skills">
