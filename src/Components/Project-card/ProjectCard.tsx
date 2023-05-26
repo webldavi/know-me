@@ -11,7 +11,7 @@ interface props {
 export default function ProjectCard(props: props) {
   return (
     <div className="project-card">
-      <img src={`/${props.nameFile}.png`} />
+      <img src={`/${props.nameFile}.png`}  alt={props.name}/>
       <div>
         <h1>{props.name}</h1>
         <p>{props.desc}</p>

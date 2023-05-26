@@ -18,6 +18,7 @@ export default function App() {
                 <Blog />
                 <Skills />
             </main>
+            <footer className="footer">Portifólio desenvolvido com 💙 por Luís daví</footer>
         </>
     );
 }
