@@ -9,7 +9,7 @@ export default function Skills() {
                     return (
                         <div key={index}>
                             {" "}
-                            <img src={s.link} alt={s.skillName} data-tooltip-name={s.skillName}/>
+                            <img src={s.link} alt={s.skillName} data-tooltip-name={s.skillName} draggable="false"/>
                             <div className="tooltip">
                                 <div>
                                     <div></div>

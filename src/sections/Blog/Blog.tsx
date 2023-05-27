@@ -54,7 +54,7 @@ export default function Welcome() {
           return (
             index <= countPosts && (
               <div key={post.id}>
-                <img src={post.cover_image} alt="post image" />
+                <img src={post.cover_image} alt="post image"  draggable="false"/>
                 <div>
                   <span> {post.title}</span>
                   <p> {post.description}</p>
