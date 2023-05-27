@@ -22,7 +22,7 @@
 .knowmecard-container > .knowmecard-text > .knowme-info{
     @apply flex flex-col gap-8 lg:pt-0
 }
-.knowmecard-container > .knowmecard-text > h1{
+.knowmecard-container > .knowmecard-text > span{
     @apply text-4xl lg:text-6xl
 }
 .knowmecard-container > .knowmecard-text > .knowme-info > p{
