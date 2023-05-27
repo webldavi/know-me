@@ -10,7 +10,7 @@ export default function KnowmeCard() {
     <div className="knowmecard-container">
       <div className="bg-gradient">
         <div>
-          <img src={profileImg} />
+          <img src={profileImg} alt="my profile image"/>
         </div>
       </div>
       <div className="knowmecard-text">

@@ -76,11 +76,9 @@ export default function Welcome() {
                             Publicado em {
                             postDate(post.published_at)
                         } </p>
-                        <button onClick={
-                            () => redirectUser(post.canonical_url)
-                        }>
+                        <a href={post.canonical_url} target="_blank">
                             Saiba Mais
-                        </button>
+                        </a>
                     </div>
                 </div>);
             })

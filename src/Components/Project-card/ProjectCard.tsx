@@ -11,9 +11,9 @@ interface props {
 export default function ProjectCard(props: props) {
   return (
     <div className="project-card">
-      <img src={`/${props.nameFile}.png`}  alt={props.name}/>
+      <img src={`/${props.nameFile}.png`} alt={props.name} />
       <div>
-        <h1>{props.name}</h1>
+        <span>{props.name}</span>
         <p>{props.desc}</p>
         <div>
           <div className="completed">
@@ -46,13 +46,7 @@ export default function ProjectCard(props: props) {
               />
             </svg>
 
-            <span
-              onClick={() => {
-                window.location.href = `${props.link}`;
-              }}
-            >
-              Link
-            </span>
+            <a href={props.link} target="_blank">Link</a>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Nav() {
         <NavLink onClick={() => goToSection("blog")}>Blog</NavLink>
         <NavLink onClick={() => goToSection("skills")}>Habilidades</NavLink>
       </nav>
-      <button onClick={() => openDrawer()}>
+      <button onClick={() => openDrawer()} type="button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -43,18 +43,17 @@ export default function Nav() {
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
+        Menu
       </button>
-      {drawer == true && (
-        <aside>
-          <nav className="navigatorMobile">
-            <NavLink onClick={() => goToSection("welcome")}>Inicio</NavLink>
-            <NavLink onClick={() => goToSection("knowme")}>Sobre mim</NavLink>
-            <NavLink onClick={() => goToSection("projects")}>Projetos</NavLink>
-            <NavLink onClick={() => goToSection("blog")}>Blog</NavLink>
-            <NavLink onClick={() => goToSection("skills")}>Habilidades</NavLink>
-          </nav>
-        </aside>
-      )}
+      <aside data-opacity={drawer}>
+        <nav className="navigatorMobile">
+          <NavLink onClick={() => goToSection("welcome")}>Inicio</NavLink>
+          <NavLink onClick={() => goToSection("knowme")}>Sobre mim</NavLink>
+          <NavLink onClick={() => goToSection("projects")}>Projetos</NavLink>
+          <NavLink onClick={() => goToSection("blog")}>Blog</NavLink>
+          <NavLink onClick={() => goToSection("skills")}>Habilidades</NavLink>
+        </nav>
+      </aside>
     </header>
   );
 }

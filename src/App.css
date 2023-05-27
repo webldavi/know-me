@@ -1,15 +1,10 @@
 body{
     @apply bg-gray-950
-}
-.backgroundImage{
-    @apply fixed top-0 -z-40 w-screen h-screen;
-    background-image: url('./assets/background.svg');
-    opacity: 0.5;
-    filter: blur(2px);
+    
 }
 .main{
     @apply w-full min-h-screen h-max flex flex-col gap-52 pb-16
 }
 .footer{
-    @apply p-2 w-full h-max flex items-center justify-center backdrop-blur-md text-white bg-gray-900/25
+    @apply p-2 w-full h-max flex items-center justify-center backdrop-blur-md text-white bg-gray-950/25
 }

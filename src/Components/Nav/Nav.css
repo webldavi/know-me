@@ -12,24 +12,19 @@
 }
 
 .nav > .navigator {
-  @apply flex flex-row gap-4 hidden md:flex;
+  @apply flex-row gap-4 hidden md:flex;
 }
 .nav > button {
-  @apply w-max h-max flex md:hidden z-10;
+  @apply w-max h-max flex flex-col items-center justify-center md:hidden z-10;
 }
 
-@keyframes drawer {
-  from {
-    opacity: 0;
-    right: -100vw;
-  }
-  to {
-    opacity: 1;
-    right: 0px;
-  }
-}
 
+.nav > aside{
+  @apply absolute right-0 top-[88px] opacity-0 backdrop-blur
+}
+.nav > aside[data-opacity="true"]{
+  @apply opacity-100
+}
 .nav > aside > .navigatorMobile {
-  animation: drawer 1.5s;
-  @apply absolute overflow-hidden right-0 -bottom-[70vh] py-16 z-50 h-[70vh] w-max flex flex-col justify-between px-8 border-b-2 border-l-2 border-t-2 rounded-l-[40px] border-white shadow-2xl bg-gray-950 shadow-gray-400/25;
+  @apply absolute overflow-hidden right-0 -bottom-[70vh] py-16 z-50 h-[70vh] w-max flex flex-col justify-between px-8 border-b-2 border-l-2 border-t-2 rounded-l-[40px] border-white shadow-2xl shadow-gray-400/25;
 }
