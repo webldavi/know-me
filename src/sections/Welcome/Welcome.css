@@ -1,9 +1,9 @@
-.welcomeContainer{
-    @apply w-full h-[100vh] text-white flex flex-col justify-center items-center px-16 text-center
+.welcomeContainer {
+  @apply w-full h-[100vh] text-white flex flex-col justify-center items-center px-16 text-center;
 }
-.welcomeContainer > h1{
-    @apply text-4xl lg:text-6xl
+.welcomeContainer > h1 {
+  @apply text-4xl lg:text-6xl;
 }
-.welcomeContainer > span{
-    @apply text-3xl lg:text-5xl
+.welcomeContainer > h2 {
+  @apply text-3xl lg:text-5xl;
 }

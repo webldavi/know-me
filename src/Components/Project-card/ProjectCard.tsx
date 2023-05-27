@@ -32,7 +32,7 @@ export default function ProjectCard(props: props) {
 
             <span>Completo</span>
           </div>
-          <div className="link">
+          <a href={props.link} target="_blank" className="link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -45,9 +45,8 @@ export default function ProjectCard(props: props) {
                 clipRule="evenodd"
               />
             </svg>
-
-            <a href={props.link} target="_blank">Link</a>
-          </div>
+            Link
+          </a>
         </div>
       </div>
     </div>

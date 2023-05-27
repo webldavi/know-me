@@ -19,7 +19,7 @@ export default function Nav() {
     <header className="nav">
       <div className="brand">
         <h1>Luís Daví</h1>
-        <span>Desenvolvedor Front-end</span>
+        <h2>Desenvolvedor Front-end</h2>
       </div>
       <nav className="navigator">
         <NavLink onClick={() => goToSection("welcome")}>Inicio</NavLink>

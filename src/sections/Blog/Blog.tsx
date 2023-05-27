@@ -17,7 +17,6 @@ export default function Welcome() {
     fetch("https://dev.to/api/articles?username=webdavi")
       .then((res) => res.json())
       .then((data) => {
-        console.log("data", data);
         setPosts(data);
       });
   }
@@ -54,10 +53,10 @@ export default function Welcome() {
         {posts.map((post, index) => {
           return (
             index <= countPosts && (
-              <div key={post.id} id="blogCard">
+              <div key={post.id}>
                 <img src={post.cover_image} alt="post image" />
                 <div>
-                  <h1> {post.title}</h1>
+                  <span> {post.title}</span>
                   <p> {post.description}</p>
                   <div>
                     {" "}
@@ -75,7 +74,11 @@ export default function Welcome() {
           );
         })}{" "}
       </div>
-      <button onClick={updateCountPosts} className="text-4xl hover:scale-110">
+      <button
+        onClick={updateCountPosts}
+        type="button"
+        className="text-4xl hover:scale-110"
+      >
         {" "}
         {textPosts}
       </button>

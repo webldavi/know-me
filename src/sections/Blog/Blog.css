@@ -20,7 +20,7 @@
 .blogContainer > div > div > div {
     @apply flex flex-col justify-between flex-1 gap-3;
 }
-.blogContainer > div > div > div > h1 {
+.blogContainer > div > div > div > span {
     @apply text-xl;
 }
 .blogContainer > div > div > div > p {

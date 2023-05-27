@@ -27,7 +27,7 @@
   @apply text-[#21FF52] flex flex-row gap-2 items-center lg:text-xl;
 }
 .project-card > div > div > .link {
-  @apply text-[#00D1FF] hover:border-[#00D1FF] flex flex-row gap-2 items-center lg:text-xl cursor-pointer;
+  @apply text-[#00D1FF] border-b border-transparent hover:border-[#00D1FF] flex flex-row gap-2 items-center lg:text-xl cursor-pointer;
 }
 .project-card > div > div > .completed > svg {
   @apply lg:h-8 lg:w-8;

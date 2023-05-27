@@ -10,11 +10,11 @@ export default function KnowmeCard() {
     <div className="knowmecard-container">
       <div className="bg-gradient">
         <div>
-          <img src={profileImg} alt="my profile image"/>
+          <img src={profileImg} alt="my profile image" />
         </div>
       </div>
       <div className="knowmecard-text">
-        <h1>Sobre mim</h1>
+        <span>Sobre mim</span>
         <div className="knowme-info">
           <p>
             Oi, eu sou o Luís Daví e tenho 19 anos. Sou apaixonado por
@@ -24,24 +24,32 @@ export default function KnowmeCard() {
           </p>
         </div>
         <div className="contacts">
-          <div onClick={() => {
-                window.location.href = "/Luis_Davi_Rebouças.pdf";
-              }}>
+          <div
+            onClick={() => {
+              window.location.href = "/Luis_Davi_Rebouças.pdf";
+            }}
+          >
             <img src={docImg} alt="" />
           </div>
-          <div onClick={() => {
-                window.location.href = "https://github.com/webldavi";
-              }}>
+          <div
+            onClick={() => {
+              window.location.href = "https://github.com/webldavi";
+            }}
+          >
             <img src={githubImg} alt="" />
           </div>
-          <div onClick={() => {
-                window.location.href = "mailto:luisdavi.contato@gmail.com";
-              }}>
+          <div
+            onClick={() => {
+              window.location.href = "mailto:luisdavi.contato@gmail.com";
+            }}
+          >
             <img src={emailImg} alt="" />
           </div>
-          <div onClick={() => {
-                window.location.href = "https://instagram.com/lu1s.dev";
-              }}>
+          <div
+            onClick={() => {
+              window.location.href = "https://instagram.com/lu1s.dev";
+            }}
+          >
             <img src={instagramImg} alt="" />
           </div>
         </div>
