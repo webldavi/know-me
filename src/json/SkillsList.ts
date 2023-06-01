@@ -42,10 +42,4 @@ export default [
       "É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
     link: "https://camo.githubusercontent.com/aa8b3e6b6fc55ea158e132e1c33ba6aa7fe49706a4e4bd64701af1cf89f514b5/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f747970657363726970742f747970657363726970742d6f726967696e616c2e737667",
   },
-  // {
-  //   skillName: "Node.js",
-  //   skillDesc:
-  //     "Node.js é um software baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. ",
-  //   link: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png",
-  // },
 ];

@@ -4,13 +4,13 @@ import githubImg from "../../assets/github.svg";
 import emailImg from "../../assets/email.svg";
 import instagramImg from "../../assets/instagram.svg";
 import docImg from "../../assets/doc.svg";
-
+import devtoImg from "../../assets/devto.svg";
 export default function KnowmeCard() {
   return (
     <div className="knowmecard-container">
       <div className="bg-gradient">
         <div>
-          <img src={profileImg} alt="my profile image" draggable="false"/>
+          <img src={profileImg} alt="my profile image" draggable="false" />
         </div>
       </div>
       <div className="knowmecard-text">
@@ -30,13 +30,12 @@ export default function KnowmeCard() {
             }}
           >
             <img src={docImg} alt="" />
-          </div>
-          <div
-            onClick={() => {
-              window.location.href = "https://github.com/webldavi";
-            }}
-          >
-            <img src={githubImg} alt="" />
+            <div className="tooltip">
+              <div>
+                <div></div>
+              </div>
+              <p>Currículo</p>
+            </div>
           </div>
           <div
             onClick={() => {
@@ -44,6 +43,38 @@ export default function KnowmeCard() {
             }}
           >
             <img src={emailImg} alt="" />
+            <div className="tooltip">
+              <div>
+                <div></div>
+              </div>
+              <p>Email</p>
+            </div>
+          </div>
+          <div
+            onClick={() => {
+              window.location.href = "https://github.com/webldavi";
+            }}
+          >
+            <img src={githubImg} alt="" />
+            <div className="tooltip">
+              <div>
+                <div></div>
+              </div>
+              <p>Github</p>
+            </div>
+          </div>
+          <div
+            onClick={() => {
+              window.location.href = "https://dev.to/webdavi";
+            }}
+          >
+            <img src={devtoImg} alt="" />
+            <div className="tooltip">
+              <div>
+                <div></div>
+              </div>
+              <p>Blog - dev.to</p>
+            </div>
           </div>
           <div
             onClick={() => {
@@ -51,6 +82,12 @@ export default function KnowmeCard() {
             }}
           >
             <img src={instagramImg} alt="" />
+            <div className="tooltip">
+              <div>
+                <div></div>
+              </div>
+              <p>Instagram</p>
+            </div>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@
     @apply w-full h-full rounded-xl
 }
 .skills > .SkillsContainer > div > img ~ .tooltip{
-    @apply w-max opacity-0 bg-slate-900 p-2 border border-white text-white rounded-lg scale-0 relative
+    @apply w-max opacity-0 bg-slate-900 p-2 border border-white text-white rounded-lg scale-0 relative transition-all duration-150
 }
 .skills > .SkillsContainer > div > img ~ .tooltip > div{
     @apply w-[calc(100%-1rem)] h-max flex justify-center absolute z-50 items-center -top-[0.58rem]

@@ -34,8 +34,23 @@
     @apply w-max h-max flex flex-row gap-4 py-2
 }
 .knowmecard-container > .knowmecard-text > .contacts > div{
-    @apply w-max h-max p-4 flex items-center justify-center border border-white rounded-[10px] cursor-pointer
+    @apply w-max h-max p-4 flex items-center justify-center border border-white rounded-[10px] cursor-pointer relative
 }
 .knowmecard-container > .knowmecard-text > .contacts > div > img{
     @apply w-6 h-6
+}
+
+
+
+.knowmecard-container > .knowmecard-text > .contacts > div >.tooltip{
+    @apply w-max absolute z-20 -bottom-[4.25rem] opacity-0 bg-slate-900 p-2 border border-white text-white rounded-lg scale-0 transition-all duration-150
+}
+.knowmecard-container > .knowmecard-text > .contacts > div >.tooltip > div{
+    @apply w-[calc(100%-1rem)] h-max flex justify-center absolute z-50 items-center -top-[0.58rem]
+}
+.knowmecard-container > .knowmecard-text > .contacts > div > .tooltip > div > div {
+    @apply p-2 bg-slate-900 h-max w-max rotate-45 border-l border-t border-white
+}
+.knowmecard-container > .knowmecard-text > .contacts > div:hover > .tooltip{
+    @apply  opacity-100 scale-75 md:scale-100
 }
