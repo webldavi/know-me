@@ -21,6 +21,10 @@
 .nav > aside{
   @apply absolute right-0 top-[88px] opacity-0 backdrop-blur
 }
+
+.nav > aside[data-opacity="false"]{
+  @apply hidden
+}
 .nav > aside[data-opacity="true"]{
   @apply opacity-100
 }
