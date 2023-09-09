@@ -26,6 +26,7 @@ export default function Nav() {
         <NavLink onClick={() => goToSection("knowme")}>Sobre mim</NavLink>
         <NavLink onClick={() => goToSection("projects")}>Projetos</NavLink>
         <NavLink onClick={() => goToSection("blog")}>Blog</NavLink>
+        <NavLink onClick={() => goToSection("certificate")}>Certificados</NavLink>
         <NavLink onClick={() => goToSection("skills")}>Habilidades</NavLink>
       </nav>
       <button onClick={() => openDrawer()} type="button">
@@ -51,6 +52,7 @@ export default function Nav() {
           <NavLink onClick={() => goToSection("knowme")}>Sobre mim</NavLink>
           <NavLink onClick={() => goToSection("projects")}>Projetos</NavLink>
           <NavLink onClick={() => goToSection("blog")}>Blog</NavLink>
+          <NavLink onClick={() => goToSection("certificate")}>Certificados</NavLink>
           <NavLink onClick={() => goToSection("skills")}>Habilidades</NavLink>
         </nav>
       </aside>

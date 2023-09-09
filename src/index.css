@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 *{
-    font-family: 'Righteous', cursive;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
     transition: all 300ms
 }
 @tailwind base;

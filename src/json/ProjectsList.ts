@@ -58,6 +58,7 @@ export default [
       rep: "PigApp",
       nameFile: "PigApp",
       typeLinkText: "Repositório",
+      link: "https://github.com/webldavi/PigApp",
       toLink: false,
     },
     {
@@ -66,6 +67,7 @@ export default [
       rep: "foodlist",
       nameFile: "food",
       typeLinkText: "Repositório",
+      link: 'https://github.com/webldavi/foodList',
       toLink: false,
     },
     {
@@ -74,6 +76,7 @@ export default [
       rep: "todo-redux",
       nameFile: "todo",
       typeLinkText: "Repositório",
+      link: "https://github.com/webldavi/todo-redux",
       toLink: false,
     },
   ]

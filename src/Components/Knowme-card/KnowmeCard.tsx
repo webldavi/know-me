@@ -5,6 +5,7 @@ import emailImg from "../../assets/email.svg";
 import instagramImg from "../../assets/instagram.svg";
 import docImg from "../../assets/doc.svg";
 import devtoImg from "../../assets/devto.svg";
+import linkedinImg from "../../assets/linkedin.svg";
 export default function KnowmeCard() {
   return (
     <div className="knowmecard-container">
@@ -48,6 +49,19 @@ export default function KnowmeCard() {
                 <div></div>
               </div>
               <p>Email</p>
+            </div>
+          </div>
+          <div
+            onClick={() => {
+              window.location.href = "https://www.linkedin.com/in/luisdav1/";
+            }}
+          >
+            <img src={linkedinImg} alt="linkedin" />
+            <div className="tooltip">
+              <div>
+                <div></div>
+              </div>
+              <p>Linkedin</p>
             </div>
           </div>
           <div

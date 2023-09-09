@@ -2,9 +2,9 @@ import './NavLink.css'
 
 type props = {
     children: string,
-    onClick: ()=> void
+    onClick: ()=> void 
 }
-export default function NavLink({onClick, children}:props){
+export default function NavLink({children, onClick}: props ){
     return(
         <button className='navlink' onClick={onClick}>
             {children}

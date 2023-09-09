@@ -9,7 +9,7 @@
 }
 
 .blogContainer > div > div {
-    @apply max-w-[26rem] h-[40rem] flex flex-col gap-4 overflow-hidden rounded-xl p-5 bg-slate-900 duration-200;
+    @apply max-w-[26rem] h-[40rem] flex flex-col gap-4 overflow-hidden rounded-xl p-5 bg-slate-950 duration-200;
 }
 .blogContainer > div > div {
    @apply border border-gray-300
@@ -24,7 +24,7 @@
     @apply text-xl;
 }
 .blogContainer > div > div > div > p {
-    @apply text-base font-light text-white/50 ;
+    @apply text-base font-light text-white/80 ;
 }
 .blogContainer > div > div > div > div {
     @apply flex flex-row gap-2 flex-wrap;

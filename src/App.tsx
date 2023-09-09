@@ -6,6 +6,7 @@ import Knowme from "./sections/Knowme/Knowme";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Blog from "./sections/Blog/Blog";
+import Certificates from "./sections/Certificates/Certificates";
 export default function App() {
     return (
         <>
@@ -14,6 +15,7 @@ export default function App() {
                 <Welcome />
                 <Knowme />
                 <Projects />
+                <Certificates/>
                 <Blog />
                 <Skills />
             </main>

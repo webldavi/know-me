@@ -3,6 +3,7 @@ body{
     
 }
 .main{
+    background-image: url("./assets/background.svg");
     @apply w-full min-h-screen h-max flex flex-col gap-52 pb-16
 }
 .footer{

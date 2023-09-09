@@ -1,5 +1,5 @@
 .project-card {
-  @apply w-max h-max flex flex-col gap-2 items-center justify-center text-white lg:flex-row;
+  @apply w-max h-max flex flex-col gap-2 items-center justify-center text-white lg:flex-row lg:scale-[0.9];
 }
 
 .project-card > img {
