@@ -18,8 +18,8 @@ export default function App() {
                 <Certificates/>
                 <Blog />
                 <Skills />
+                <footer className="footer">Portifólio desenvolvido com 💙 por Luís daví</footer>
             </main>
-            <footer className="footer">Portifólio desenvolvido com 💙 por Luís daví</footer>
         </>
     );
 }

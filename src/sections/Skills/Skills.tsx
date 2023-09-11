@@ -5,9 +5,9 @@ export default function Skills() {
         <section className="skills" id="skills">
             <h1>#Habilidades</h1>
             <div className="SkillsContainer">
-                {SkillsList.map((s, index) => {
+                {SkillsList.map((s, index) => { 
                     return (
-                        <div key={index}>
+                        <div key={index} data-key={index + 1}>
                             {" "}
                             <img src={s.link} alt={s.skillName} data-tooltip-name={s.skillName} draggable="false"/>
                             <div className="tooltip">

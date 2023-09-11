@@ -4,8 +4,9 @@ body{
 }
 .main{
     background-image: url("./assets/background.svg");
-    @apply w-full min-h-screen h-max flex flex-col gap-52 pb-16
+    @apply w-full min-h-screen h-max flex flex-col gap-52
 }
-.footer{
-    @apply p-2 w-full h-max flex items-center justify-center backdrop-blur-md text-white bg-gray-950/25
+.main > .footer{
+    @apply py-6 w-full h-max flex items-center justify-center backdrop-blur
+    font-bold bg-gray-800/25 border-t border-white text-white
 }

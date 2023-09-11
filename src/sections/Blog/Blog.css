@@ -1,15 +1,15 @@
 .blogContainer {
-    @apply w-full h-max flex flex-col gap-12 justify-center items-center text-white px-4;
+    @apply w-full h-max flex flex-col gap-12 justify-center items-center text-white px-4 lg:px-6;
 }
 .blogContainer > h1 {
     @apply text-green-500 text-6xl;
 }
 .blogContainer > div {
-    @apply w-full h-max flex flex-row items-center justify-center flex-wrap gap-6 lg:px-32;
+    @apply w-full h-max flex flex-row items-center justify-center flex-wrap gap-6;
 }
 
 .blogContainer > div > div {
-    @apply max-w-[26rem] h-[40rem] flex flex-col gap-4 overflow-hidden rounded-xl p-5 bg-slate-950 duration-200;
+    @apply max-w-[26rem] h-[35rem] flex flex-col gap-1 overflow-hidden rounded-xl p-5 bg-slate-950 duration-200;
 }
 .blogContainer > div > div {
    @apply border border-gray-300
@@ -21,16 +21,16 @@
     @apply flex flex-col justify-between flex-1 gap-3;
 }
 .blogContainer > div > div > div > span {
-    @apply text-xl;
+    @apply text-lg;
 }
 .blogContainer > div > div > div > p {
-    @apply text-base font-light text-white/80 ;
+    @apply text-sm font-light text-white/80 ;
 }
 .blogContainer > div > div > div > div {
     @apply flex flex-row gap-2 flex-wrap;
 }
 .blogContainer > div > div > div > div > div {
-    @apply rounded-full p-1 bg-gray-950 py-2 px-3 border border-white/25;
+    @apply rounded-full p-1 bg-gray-950 py-2 px-3 border border-white/25 text-sm;
 }
 .blogContainer > div > div > div > a {
     @apply w-full text-center rounded-md bg-emerald-500/75 border border-gray-400 py-2 text-indigo-100 hover:border-white hover:bg-emerald-700 duration-300;

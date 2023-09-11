@@ -1,5 +1,14 @@
 export default [
     {
+      name: "SyncEduc",
+      desc: "O SyncEduc foi um trabalho de conclusão de curso, onde eu e meus amigos desenvolvemos uma aplicação full-stack de uma plataforma de cursos online",
+      rep: "",
+      nameFile: "synceduc",
+      typeLinkText: "Repositório",
+      toLink: false,
+      link: "https://github.com/SyncEduc/SyncEduc",
+    },
+    {
       name: "Voice to Text",
       desc: "Aplicação simples que usa reconhecimento de voz para transformar a voz em texto",
       rep: "",

@@ -64,7 +64,7 @@ export default function Welcome() {
                       return <div key={index}>#{tag}</div>;
                     })}{" "}
                   </div>
-                  <p>Publicado em {postDate(post.published_at)} </p>
+                  <p className="text-xs">Publicado em {postDate(post.published_at)} </p>
                   <a href={post.canonical_url} target="_blank">
                     Saiba Mais
                   </a>

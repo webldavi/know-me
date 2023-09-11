@@ -19,9 +19,31 @@
 .skills > .SkillsContainer{
     @apply w-full flex flex-row flex-wrap gap-x-12 gap-y-24 justify-center items-center
 }
+
+.skills > .SkillsContainer > div[data-key="1"]{
+    animation-delay: 1s;
+}
+.skills > .SkillsContainer > div[data-key="2"]{
+    animation-delay: 1.5s;
+}
+.skills > .SkillsContainer > div[data-key="3"]{
+    animation-delay: 2s;
+}
+.skills > .SkillsContainer > div[data-key="4"]{
+    animation-delay: 2.5s;
+}
+.skills > .SkillsContainer > div[data-key="5"]{
+    animation-delay: 3s;
+}
+.skills > .SkillsContainer > div[data-key="6"]{
+    animation-delay: 3.5s;
+}
+.skills > .SkillsContainer > div[data-key="7"]{
+    animation-delay: 4s;
+}
 .skills > .SkillsContainer > div{
     animation: jump 5s infinite;
-    @apply w-40 h-40 flex flex-col gap-6 items-center justify-center
+    @apply w-24 h-24 flex flex-col gap-6 items-center justify-center
 }
 .skills > .SkillsContainer > div > img{
     @apply w-full h-full rounded-xl

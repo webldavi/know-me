@@ -1,21 +1,21 @@
 .project-card {
-  @apply w-max h-max flex flex-col gap-2 items-center justify-center text-white lg:flex-row lg:scale-[0.9];
+  @apply w-max h-max flex flex-col gap-2 items-center justify-center text-white lg:flex-row;
 }
 
 .project-card > img {
-  @apply w-full rounded-[25px] border border-white sm:w-96 lg:w-96 bg-gray-950;
+  @apply w-full rounded-[25px] border border-white sm:w-72  bg-gray-950;
 }
 
 .project-card > div {
   box-shadow: 0px 0px 10px 0px rgb(255 255 255 / 55%);
-  @apply w-[90%] border border-white rounded-[25px] p-4 mt-[-4.5rem] bg-gray-950 h-96 flex flex-col items-center text-center justify-between gap-6 sm:w-96 lg:mt-0 lg:w-[26rem] lg:ml-[-4rem] lg:h-max lg:text-left lg:items-start;
+  @apply w-[90%] border border-white rounded-[25px] p-4 mt-[-4.5rem] bg-gray-950 h-96 flex flex-col items-center text-center justify-between gap-6 sm:w-96 lg:mt-0 lg:w-[24rem] lg:ml-[-4rem] lg:h-max lg:text-left lg:items-start;
 }
 
 .project-card > div > span {
   @apply text-2xl h-max;
 }
 .project-card > div > p {
-  @apply text-xl opacity-75;
+  @apply text-sm opacity-75;
 }
 .project-card > div > div {
   @apply flex flex-row gap-4 w-max;
