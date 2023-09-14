@@ -3,7 +3,7 @@
 }
 
 .project-card > img {
-  @apply w-full rounded-[25px] border border-white sm:w-72  bg-gray-950;
+  @apply w-full rounded-[25px] border border-white sm:w-72 sm:h-72  bg-gray-950;
 }
 
 .project-card > div {
@@ -17,25 +17,29 @@
 .project-card > div > p {
   @apply text-sm opacity-75;
 }
-.project-card > div > div {
+.project-card > div > div.about {
   @apply flex flex-row gap-4 w-max;
 }
-.project-card > div > div > div {
+.project-card > div > div.about > div {
   @apply flex flex-row gap-2 border-b border-transparent pb-1;
 }
-.project-card > div > div > .completed {
-  @apply text-[#21FF52] flex flex-row gap-2 items-center lg:text-xl;
+.project-card > div > div.about > .completed {
+  @apply text-[#21FF52] flex flex-row gap-2 items-center lg:text-xl -ml-1;
 }
-.project-card > div > div > .link {
+.project-card > div > div.about > .link {
   @apply text-[#00D1FF] border-b border-transparent hover:border-[#00D1FF] flex flex-row gap-2 items-center lg:text-xl cursor-pointer;
 }
-.project-card > div > div > .completed > svg {
-  @apply lg:h-8 lg:w-8;
+.project-card > div > div.about > .completed > svg {
+  @apply lg:h-6 lg:w-6;
 }
-.project-card > div > div > .link > svg {
-  @apply lg:h-8 lg:w-8;
+.project-card > div > div.about > .link > svg {
+  @apply lg:h-6 lg:w-6;
 }
 
-.project-card > div > div > div > img {
-  @apply w-6 h-6;
+.project-card > div > div.about > div > img {
+  @apply w-12 h-6;
+}
+
+.project-card > div > .listTech{
+  @apply w-full flex flex-row gap-4 justify-center lg:justify-start 
 }

@@ -1,3 +1,4 @@
+import TechIcon from "../Tech-icon/TechIcon";
 import "./ProjectCard.css";
 interface props {
   name: string;
@@ -7,6 +8,10 @@ interface props {
   typeLinkText?: string;
   toLink?: boolean;
   link?: string;
+  techs: Array<{
+    name: string,
+    src: string
+  }>;
 }
 export default function ProjectCard(props: props) {
   return (
@@ -15,7 +20,7 @@ export default function ProjectCard(props: props) {
       <div>
         <span>{props.name}</span>
         <p>{props.desc}</p>
-        <div>
+        <div className="about">
           <div className="completed">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +52,13 @@ export default function ProjectCard(props: props) {
             </svg>
             Link
           </a>
+        </div>
+        <div className="listTech">
+          {props.techs.map((tech, index)=>{
+            return(
+              <TechIcon name={tech.name} file={tech.src} key={index}/>
+            )
+          })}
         </div>
       </div>
     </div>

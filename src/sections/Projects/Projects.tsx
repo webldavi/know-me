@@ -27,6 +27,7 @@ export default function Projects() {
                 desc={p.desc}
                 link={p.link}
                 nameFile={p.nameFile}
+                techs={p.techs}
               />
             )
           );

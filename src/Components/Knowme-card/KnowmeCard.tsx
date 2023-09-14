@@ -6,6 +6,7 @@ import instagramImg from "../../assets/instagram.svg";
 import docImg from "../../assets/doc.svg";
 import devtoImg from "../../assets/devto.svg";
 import linkedinImg from "../../assets/linkedin.svg";
+
 export default function KnowmeCard() {
   return (
     <div className="knowmecard-container">
@@ -27,7 +28,7 @@ export default function KnowmeCard() {
         <div className="contacts">
           <div
             onClick={() => {
-              window.location.href = "/Luis_Davi_Rebouças.pdf";
+              window.open("/Luis_Davi_Rebouças.pdf", "_blank");
             }}
           >
             <img src={docImg} alt="" />
@@ -40,7 +41,7 @@ export default function KnowmeCard() {
           </div>
           <div
             onClick={() => {
-              window.location.href = "mailto:luisdavi.contato@gmail.com";
+              window.open("mailto:luisdavi.contato@gmail.com", "_blank");
             }}
           >
             <img src={emailImg} alt="" />
@@ -53,7 +54,7 @@ export default function KnowmeCard() {
           </div>
           <div
             onClick={() => {
-              window.location.href = "https://www.linkedin.com/in/luisdav1/";
+              window.open("https://www.linkedin.com/in/luisdav1/", "_blank");
             }}
           >
             <img src={linkedinImg} alt="linkedin" />
@@ -66,7 +67,7 @@ export default function KnowmeCard() {
           </div>
           <div
             onClick={() => {
-              window.location.href = "https://github.com/webldavi";
+              window.open("https://github.com/webldavi", "_blank");
             }}
           >
             <img src={githubImg} alt="" />
@@ -79,7 +80,7 @@ export default function KnowmeCard() {
           </div>
           <div
             onClick={() => {
-              window.location.href = "https://dev.to/webdavi";
+              window.open("https://dev.to/webdavi", "_blank");
             }}
           >
             <img src={devtoImg} alt="" />
@@ -92,7 +93,7 @@ export default function KnowmeCard() {
           </div>
           <div
             onClick={() => {
-              window.location.href = "https://instagram.com/lu1s.dev";
+              window.open("https://instagram.com/lu1s.dev", "_blank");
             }}
           >
             <img src={instagramImg} alt="" />
