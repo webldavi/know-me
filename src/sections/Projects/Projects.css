@@ -1,5 +1,5 @@
 .projects-section{
-    @apply w-full h-max flex flex-col gap-2 justify-center items-center text-white
+    @apply w-full h-max flex flex-col gap-12 justify-center items-center text-white
 }
 .projects-section > h1{
     @apply text-green-500 text-6xl
