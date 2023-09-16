@@ -8,6 +8,12 @@ import devtoImg from "../../assets/devto.svg";
 import linkedinImg from "../../assets/linkedin.svg";
 
 export default function KnowmeCard() {
+
+
+  const content = 'export default {\n    "nome": "Luís Daví Rebouças",\n    "desc": `Oi, eu sou o Luís Daví e tenho 19 anos.\n    Sou apaixonado por tecnologia e estou sempre buscando\n    me atualizar na área de engenharia de software.\n    Sou autodidata e estou sempre pronto para aprender mais.`,\n    "idade": 19\n  }'
+
+  const url = `https://n0d3rr-sh.vercel.app/#/editor/material-ocean/js?disable=true&text=${encodeURIComponent(content)}`
+
   return (
     <div className="knowmecard-container">
       <div className="bg-gradient">
@@ -16,16 +22,9 @@ export default function KnowmeCard() {
         </div>
       </div>
       <div className="knowmecard-text">
-        <span>Sobre mim</span>
-        <div className="knowme-info">
-          <p>
-            Oi, eu sou o Luís Daví e tenho 19 anos. Sou apaixonado por
-            tecnologia e estou sempre buscando me atualizar na área de
-            engenharia de software. Sou autodidata e estou sempre pronto para
-            aprender mais.
-          </p>
-        </div>
-        <div className="contacts">
+        <span className="pl-2">Sobre mim</span>
+        <iframe className="knowme-info" src={url}></iframe>
+        <div className="contacts pl-2">
           <div
             onClick={() => {
               window.open("/Luis_Davi_Rebouças.pdf", "_blank");
