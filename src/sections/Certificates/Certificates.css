@@ -10,5 +10,5 @@
     @apply w-full p-4 flex flex-row flex-wrap gap-4 justify-center
 }
 .certificateContainer > .list > .certificate{
-    @apply w-full lg:w-[48%] h-max lg:h-[26rem]
+    @apply w-full lg:w-[48%] h-max lg:h-[26rem] rounded-xl
 }
