@@ -1,10 +1,14 @@
 import "./Certificates.css";
 import discover from '../../assets/discover.png'
+import nlwia from "../../assets/nlwia.png"
 
 export default function Certificates() {
     const certificatesList = [
         {
             src: discover
+        },
+        {
+            src: nlwia
         }
     ]
     return (
