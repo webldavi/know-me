@@ -133,7 +133,7 @@ export default [
   },
   {
     name: "n0d3rr Syntax Highlighter",
-    desc: "é um editor de código cuja o objetivo é facilitar a escrita de documentações em exemplos de códigos",
+    desc: "é um editor de código cuja o objetivo é facilitar a escrita de documentações com exemplos de códigos",
     rep: "",
     nameFile: "NSH",
     typeLinkText: "Link",
