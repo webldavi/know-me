@@ -1,5 +1,5 @@
 body {
-  @apply bg-gray-950;
+  @apply bg-gray-950 w-screen overflow-x-hidden;
 }
 .main {
   background-image: url("./assets/background.svg");

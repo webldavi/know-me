@@ -1,6 +1,6 @@
 .nav {
   @apply w-full h-max fixed top-0 z-50 flex flex-row justify-between items-center px-4 py-2
-   text-white border-b border-white backdrop-blur-md lg:px-16;
+   text-white pt-8 sm:pt-0 border-b border-white backdrop-blur-md lg:px-16;
 }
 .nav > .brand {
   @apply flex flex-col;
