@@ -12,7 +12,7 @@ export default function KnowmeCard() {
 
   const content = 'export default {\n    "nome": "Luís Daví Rebouças",\n    "desc": `Oi, eu sou o Luís Daví e tenho 19 anos.\n    Sou apaixonado por tecnologia e estou sempre buscando\n    me atualizar na área de engenharia de software.\n    Sou autodidata e estou sempre pronto para aprender mais.`,\n    "idade": 19\n  }'
 
-  const url = `https://n0d3rr-sh.vercel.app/#/editor/material-ocean/js?disable=true&text=${encodeURIComponent(content)}`
+  const url = `https://n0d3rr-sh.vercel.app/#/editor/material-ocean/js?disable=true&text=${encodeURIComponent(content)}&line=true`
 
   return (
     <div className="knowmecard-container">
