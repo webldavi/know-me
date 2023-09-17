@@ -9,7 +9,7 @@
 }
 
 .blogContainer > div > div {
-    @apply max-w-[26rem] h-[35rem] flex flex-col gap-1 overflow-hidden rounded-xl p-5 bg-slate-950 duration-200;
+    @apply max-w-[26rem] h-[35rem] flex flex-col gap-1 overflow-hidden rounded-xl p-5 bg-[#0f111aff] duration-200;
 }
 .blogContainer > div > div {
    @apply border border-gray-300
