@@ -1,5 +1,36 @@
 export default [
   {
+    name: "Tail-theme",
+    desc: "Tail-theme foi desenvolvido usando as cores padrões do tailwind CSS, assim criando um tema agradavel e com cores aprovadas pela comunidade",
+    rep: "",
+    nameFile: "tail-theme",
+    typeLinkText: "Repositório",
+    toLink: false,
+    link: "https://github.com/webldavi/tail-theme",
+    techs: [
+      {
+        name: "CSS3",
+        src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+      },
+      {
+        name: "Javascript",
+        src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
+      },
+      {
+        name: "Node.js",
+        src: "https://nodejs.org/static/images/favicons/favicon.png",
+      },
+      {
+        name: "Json",
+        src: "https://img.icons8.com/?size=1080&id=50024&format=png",
+      },
+      {
+        name: "Tailwind CSS",
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+      },
+    ],
+  },
+  {
     name: "SyncEduc",
     desc: "O SyncEduc foi um trabalho de conclusão de curso, onde eu e meus amigos desenvolvemos uma aplicação full-stack de uma plataforma de cursos online",
     rep: "",

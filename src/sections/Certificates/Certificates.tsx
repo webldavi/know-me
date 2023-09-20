@@ -10,9 +10,9 @@ export default function Certificates() {
         {
             src: nlwia
         },
-        {
-            src: devBackEnd
-        }
+        // {
+        //     src: devBackEnd
+        // }
     ]
     return (
         <section id="certificate" className="certificateContainer">
