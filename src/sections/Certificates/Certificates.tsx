@@ -1,7 +1,7 @@
 import "./Certificates.css";
 import discover from '../../assets/discover.png'
 import nlwia from "../../assets/nlwia.png"
-import devBackEnd from "../../assets/devbackend.png"
+// import devBackEnd from "../../assets/devbackend.png"
 export default function Certificates() {
     const certificatesList = [
         {
