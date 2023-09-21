@@ -84,13 +84,13 @@ const links = ref([
 .profile{
     @apply w-full min-h-[300px] sm:w-96 p-4 
     flex flex-col gap-4 items-center text-center justify-between
-    shadow border border-gray-300 rounded-lg 
+    shadow border border-gray-300 rounded-lg  bg-white
 }
 
 .about{
     @apply flex-1 min-h-[300px]  p-4 
     flex flex-col gap-4 items-center sm:items-start text-center md:text-left
-    shadow border border-gray-300 rounded-lg 
+    shadow border border-gray-300 rounded-lg  bg-white
 }
 .profile img{
     @apply w-40 -mt-20 shadow border border-gray-300 rounded-lg 
