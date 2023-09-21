@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import "./Load.css";
 
 export default function Load({time}: {[key:string]:any}) {
