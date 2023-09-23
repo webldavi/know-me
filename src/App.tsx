@@ -13,23 +13,9 @@ export default function App() {
 
 
   const [time, setTime] = useState(0);
-
-  const callback = useCallback(() => {
-    function load() {
-      const timeout = setTimeout(() => {
-        setTime(time + 1);
-      }, 2000 / 100);
-
-      if (time >= 100) {
-        clearTimeout(timeout);
-      }
-    }
-    load();
-  }, [time]);
-
-  useEffect(() => {
-    callback();
-  }, [callback]);
+  window.addEventListener("load", ()=>{
+    setTime(100)
+  })
   return (
     <>
       {time >= 100 ? (
