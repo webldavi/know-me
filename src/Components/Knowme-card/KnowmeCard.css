@@ -33,7 +33,10 @@
     @apply w-max h-max flex flex-row gap-4 py-2 flex-wrap w-full
 }
 .knowmecard-container > .knowmecard-text > .contacts > div{
-    @apply w-max h-max p-4 flex items-center justify-center border border-white rounded-[10px] cursor-pointer relative
+    @apply w-max h-max p-4 flex items-center justify-center 
+    transition-all
+    hover:-translate-y-2
+    border border-white rounded-[10px] cursor-pointer relative
 }
 .knowmecard-container > .knowmecard-text > .contacts > div > img{
     @apply w-6 h-6
