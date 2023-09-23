@@ -20,28 +20,32 @@
     </div>
 </template>
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps(["image", "title", "desc", "techs", "link"])
 </script>
 <style scoped>
 .cardContainer{
-    @apply w-[18rem] h-[18rem] sm:w-[24rem] sm:h-[24rem] flex flex-col gap-4 
-    relative overflow-hidden shadow
+    @apply w-[18rem] h-[18rem] flex flex-col gap-4 
+    relative overflow-hidden shadow shadow-zinc-400
     rounded-lg
 }
 .content{
-    background: linear-gradient(0deg, rgba(39,39,42,1) 0%, rgba(39,39,42,0.958420868347339) 25%, rgba(39,39,42,0.908000700280112) 40%, rgba(39,39,42,0) 100%);
-    @apply absolute p-4  text-white h-max  w-full -bottom-[20rem] transition-all
+    /* background: linear-gradient(0deg, rgba(39,39,42,1) 0%, rgba(39,39,42,0.958420868347339) 25%, rgba(39,39,42,0.908000700280112) 40%, rgba(39,39,42,0) 100%); */
+    transition: all 500ms;
+    @apply absolute p-4 bg-zinc-800/75 backdrop-blur rounded-t-lg text-white 
+    h-max  w-full -bottom-[20rem]
     flex flex-col gap-3
 }
 
 .cardContainer:hover > .content{
-    @apply bottom-0
+    @apply bottom-0 h-[18rem]
+}
+.cardContainer:hover > img{
+    @apply scale-125
 }
 
 .cardContainer > img{
-    @apply w-full h-full
+    @apply w-full h-full transition-all
 }
 
 

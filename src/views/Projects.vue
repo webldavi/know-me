@@ -1,5 +1,5 @@
 <template>
-    <div class="projectsContainer" data-aos="fade-up" data-aos-duration="800">
+    <section class="projectsContainer" data-aos="fade-up" data-aos-duration="800">
         <h1 class="text-2xl font-bold">Meus Projetos</h1>
         <div class="projectList">
             <div class="project" v-for="(project, index) in projects" :key="index">
@@ -8,7 +8,7 @@
             </div>
 
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>
@@ -369,11 +369,12 @@ const projects = ref([
 
 <style scoped>
 .projectsContainer{
-    @apply w-full h-max flex flex-col items-center justify-center gap-12 py-4
-    border border-gray-300 shadow 
+    @apply w-full h-max flex flex-col items-center justify-center gap-12 p-4
+    shadow-sm shadow-zinc-400
     rounded-lg 
 }
 .projectList{
-    @apply w-full h-max px-4 flex flex-row flex-wrap gap-4 items-center justify-center
+    @apply w-full h-max px-4 flex flex-row flex-wrap
+    items-center justify-center gap-4
 }
 </style>
