@@ -1,6 +1,6 @@
 <template>
 
-    <div class="cardContainer" data-aos="zoom-out" data-aos-duration="400">
+    <div class="cardContainer">
         <img :src="`/${props.image}.png`" alt="">
         <div class="content">
             <h1 class="text-xl font-bold">{{ props.title }}</h1>

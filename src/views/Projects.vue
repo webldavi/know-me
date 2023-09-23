@@ -371,7 +371,7 @@ const projects = ref([
 .projectsContainer{
     @apply w-full h-max flex flex-col items-center justify-center gap-12 py-4
     border border-gray-300 shadow 
-    rounded-lg bg-white
+    rounded-lg 
 }
 .projectList{
     @apply w-full h-max px-4 flex flex-row flex-wrap gap-4 items-center justify-center
