@@ -7,7 +7,7 @@ import Skills from "./sections/Skills/Skills";
 import Blog from "./sections/Blog/Blog";
 import Certificates from "./sections/Certificates/Certificates";
 import Load from "./Components/Load/Load";
-import { useEffect, useCallback, useState } from "react";
+import {useState } from "react";
 
 export default function App() {
 
