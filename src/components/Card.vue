@@ -1,7 +1,7 @@
 <template>
 
     <div class="cardContainer">
-        <img :src="`/${props.image}.png`" :alt="props.title">
+        <img :src="`/${props.image}.webp`" :alt="props.title">
         <div class="content">
             <h1 class="text-xl font-bold">{{ props.title }}</h1>
             <p class="font-semibold opacity-70">{{ props.desc }}</p>
