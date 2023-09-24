@@ -1,7 +1,7 @@
 <template>
 
     <div class="cardContainer">
-        <img :src="`/${props.image}.png`" alt="">
+        <img :src="`/${props.image}.png`" :alt="props.title">
         <div class="content">
             <h1 class="text-xl font-bold">{{ props.title }}</h1>
             <p class="font-semibold opacity-70">{{ props.desc }}</p>
@@ -9,12 +9,12 @@
                 <span class="text-green-500 font-bold">
                     Completo
                 </span>
-                <a class="font-bold text-sky-500" :href="props.link" target="_blank">
+                <a class="font-bold text-sky-500" :aria-label="`link de redirecionamento para meu projeto '${props.title}'`" :title="`link de redirecionamento para meu projeto '${props.title}'`" :href="props.link" target="_blank">
                     Link
                 </a>
             </div>
             <div class="w-full flex flex-row flex-wrap gap-2">
-                <img class="h-6 w-6" v-for="tech in props.techs" :key="tech.name" :src="tech.src">
+                <img class="h-6 w-6" v-for="tech in props.techs" :key="tech.name" :src="tech.src" :alt="`Icone de tecnologia | ${tech.name}`">
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
     <section class="knowmeContainer">
         <div class="profile" data-aos="fade-right" data-aos-duration="800">
-            <img src="../assets/photo.jpg"/>
+            <img src="../assets/photo.jpg" alt="Luís Daví Rebouças | Foto de perfil"/>
             <h1 class="text-2xl font-bold">Luís Daví Rebouças</h1>
             <p class="font-bold text text-lg opacity-70">Desenvolvedor Front-end Jr.</p>
             <div class="links">
@@ -9,7 +9,7 @@
                 :class="{'text-white hover:text-zinc-800 hover:bg-white': themeStore.getTheme,
                  'text-zinc-800 hover:text-white hover:bg-zinc-800': !themeStore.getTheme}" 
                 :aria-label="link.desc" :title="link.desc" target="_blank" :href="link.url">
-                    <component :is="link.icon"></component>
+                    <component :is="link.icon" alt="awdawd"></component>
                 </a>
             </div>
         </div>
