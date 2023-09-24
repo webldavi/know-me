@@ -7,7 +7,7 @@
                 :techs="project.techs" :link="project.link"></Card>
             </div>
         </div>
-        <button aria-label="Visualizar mais ou menos projetos" @click="showAll = !showAll" :class="{'rotate-180': showAll}">
+        <button aria-label="Visualizar mais ou menos projetos" title="Visualizar mais ou menos projetos" @click="showAll = !showAll" :class="{'rotate-180': showAll}">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5H7z"/></svg>
         </button>
     </section>
