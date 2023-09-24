@@ -1,20 +1,22 @@
 <template>
     <section class="projectsContainer" data-aos="fade-up" data-aos-duration="800">
         <h1 class="text-2xl font-bold">Meus Projetos</h1>
-        <div class="projectList">
+        <div class="projectList" :class="{'h-80':!showAll, 'h-max':showAll}">
             <div class="project" v-for="(project, index) in projects" :key="index">
                 <Card :title="project.name" :image="project.nameFile" :desc="project.desc"
                 :techs="project.techs" :link="project.link"></Card>
             </div>
-
         </div>
+        <button @click="showAll = !showAll" :class="{'rotate-180': showAll}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5H7z"/></svg>
+          </button>
     </section>
 </template>
 
 <script setup>
 import {ref} from "vue"
 import Card from "../components/Card.vue"
-
+const showAll = ref(false)
 const projects = ref([
   {
     name: "Tail-theme",
@@ -369,12 +371,11 @@ const projects = ref([
 
 <style scoped>
 .projectsContainer{
-    @apply w-full h-max flex flex-col items-center justify-center gap-12 p-4
-    shadow-sm shadow-zinc-400
+    @apply w-full h-max flex flex-col items-center gap-12
     rounded-lg 
 }
 .projectList{
-    @apply w-full h-max px-4 flex flex-row flex-wrap
-    items-center justify-center gap-4
+    @apply w-full overflow-hidden  flex flex-row flex-wrap
+    items-center justify-center gap-12
 }
 </style>

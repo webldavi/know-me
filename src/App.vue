@@ -5,6 +5,7 @@
     </button>
     <Knowme/>
     <Projects/>
+    <Blog/>
   </main>
 </template>
 <script setup>
@@ -12,15 +13,16 @@ import { onBeforeMount, watch } from 'vue';
 import { useThemeStore } from './store/theme';
 import Knowme from './views/Knowme.vue';
 import Projects from './views/Projects.vue'
+import Blog from './views/Blog.vue';
 
 const themeStore = useThemeStore()
 
-watch(themeStore.isDark, ()=>{
-  
-})
-
 onBeforeMount(() => {
-  themeStore.setTheme(JSON.parse(localStorage.getItem('theme')))
+  if(JSON.parse(localStorage.getItem('theme')) != null){
+    themeStore.setTheme(JSON.parse(localStorage.getItem('theme')))
+  }else{
+    themeStore.setTheme(true)
+  }
   
 })
 </script>

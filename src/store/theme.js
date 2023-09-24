@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 export const useThemeStore = defineStore('theme',{
     state: ()=>{
         return {
-            isDark: false,
+            isDark: true,
         }
     },
     getters: {
@@ -18,6 +18,7 @@ export const useThemeStore = defineStore('theme',{
             localStorage.setItem("theme", this.isDark)
         },
         setTheme(value){
+            console.log(value)
             this.isDark = value
         }
     }
