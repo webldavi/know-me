@@ -9,7 +9,7 @@
             </div>
             <h1><slot name="title"/></h1>
             <p><slot name="desc"/></p>
-            <a :href="url" target="_blank">Saiba mais</a>
+            <a :href="url" target="_blank" title="Link para a publicação" data-label="Link para a publicação">Saiba mais</a>
         </div>
     </div>
 </template>
