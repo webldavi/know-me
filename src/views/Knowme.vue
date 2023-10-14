@@ -30,6 +30,7 @@ import Github from "../icons/Github.vue"
 import Linkedin from "../icons/Linkedin.vue"
 import Devto from "../icons/Devto.vue"
 import Instagram from "../icons/Instagram.vue"
+import Work from "../icons/Work.vue"
 import { useThemeStore } from "../store/theme";
 
 const themeStore = useThemeStore()
@@ -40,6 +41,12 @@ const links = ref([
         desc: "link para o meu Currículo",
         id: Date.now(),
         url: "/Luis_Davi_Rebouças.pdf"
+    },
+    {
+        icon: Work,
+        desc: "link para entrar em contato comigo",
+        id: Date.now(),
+        url: "/contact"
     },
     {
         icon: Email,
@@ -82,7 +89,7 @@ const links = ref([
 }
 
 .profile{
-    @apply w-full min-h-[342px] sm:w-96 p-4 
+    @apply w-full min-h-[342px] sm:w-[26rem] p-4 
     flex flex-col gap-4 items-center text-center justify-between
     shadow-sm shadow-zinc-400 rounded-lg  
 }
