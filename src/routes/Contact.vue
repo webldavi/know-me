@@ -28,7 +28,7 @@ function sendMessage() {
 </script>
 
 <template>
-    <main class="w-full h-max min-h-screen flex flex-col gap-12 text-white overflow-hidden">
+    <main class="w-full h-max min-h-screen flex flex-col gap-24 text-white overflow-hidden">
         <section class="w-full min-h-screen flex items-center justify-end" id="formSection">
             <div class="flex flex-col items-center justify-between gap-2 w-full md:max-w-[60vw] h-full">
                 <div class="flex flex-col h-max w-max mb-2">
@@ -84,7 +84,7 @@ function sendMessage() {
             <div class="flex flex-col items-start gap-12 flex-1">
                 <div class="flex gap-2 items-center justify-center">
                     <img src="/website.png" alt="Emoji" class="w-24 h-24">
-                    <h1 class="text-4xl lg:text-6xl">O que é uma lading page?</h1>
+                    <h1 class="text-4xl lg:text-6xl font-bold">O que é uma lading page?</h1>
                 </div>
                 <p class="w-full max-w-[72rem] text-xl text-center opacity-80">Uma landing page é uma página da web criada para direcionar a atenção do visitante a uma oferta específica e incentivá-lo a tomar uma ação desejada, como preencher um formulário ou fazer uma compra. É projetada para conversões eficazes.</p>
             </div>
@@ -97,9 +97,9 @@ function sendMessage() {
             <div class="flex flex-col items-center gap-2">
                 <div class="flex gap-2 items-center justify-center">
                     <img src="/bullseye.png" alt="Emoji" class="w-24 h-24">
-                    <h1 class="text-4xl lg:text-6xl">Quais as vantagens?</h1>
+                    <h1 class="text-4xl lg:text-6xl font-bold">Quais as vantagens?</h1>
                 </div>
-                <p class="w-full max-w-[72rem] text-xl text-center opacity-80">Uma landing page eficaz é uma ferramenta valiosa para
+                <p class="w-full max-w-[80vw] text-xl text-center opacity-80">Uma landing page eficaz é uma ferramenta valiosa para
                     qualquer negócio. Ela simplifica a conversão de visitantes em clientes, fornece informações claras,
                     aumenta a visibilidade e ajuda a economizar tempo e recursos. Potencialize seu sucesso online com uma
                     landing</p>
@@ -138,6 +138,82 @@ function sendMessage() {
                 </div>
             </div>
         </section>
+        <section class="w-full min-h-screen flex flex-col items-center gap-2" id="">
+            <div class="w-max h-max p-2 ml-20 px-3 rounded-full bg-emerald-300 text-emerald-900 flex gap-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.285 2.142a3 3 0 0 0-4.57 0l-.042.05a1 1 0 0 1-.842.348l-.065-.005a3 3 0 0 0-3.23 3.231l.004.065a1 1 0 0 1-.348.842l-.05.042a3 3 0 0 0 0 4.57l.05.042a1 1 0 0 1 .348.842l-.005.065A3.002 3.002 0 0 0 8 15.429V22a1 1 0 0 0 1.555.832L12 21.202l2.445 1.63A1 1 0 0 0 16 22v-6.57a3.002 3.002 0 0 0 2.465-3.196l-.005-.065a1 1 0 0 1 .348-.842l.05-.042a3 3 0 0 0 0-4.57l-.05-.042a1 1 0 0 1-.348-.842l.005-.065a3 3 0 0 0-3.231-3.23l-.065.004a1 1 0 0 1-.842-.348l-.042-.05ZM10 20.132V16.15a3.002 3.002 0 0 0 4 0v3.98l-1.445-.963a1 1 0 0 0-1.11 0L10 20.131Zm4.707-11.425a1 1 0 0 0-1.414-1.414L11 9.586l-.293-.293a1 1 0 0 0-1.414 1.414l1 1a1 1 0 0 0 1.414 0l3-3Z" clip-rule="evenodd"/></svg>
+                <h1 class="font-bold text-lg">Selo de qualidade</h1>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <div class="flex gap-2 items-center justify-center">
+                    <img src="/truck.png" alt="Emoji" class="w-24 h-24">
+                    <h1 class="text-4xl lg:text-6xl font-bold">Entregas</h1>
+                </div>
+                <p class="w-full max-w-[80vw] text-xl text-center opacity-80">Uma landing page eficaz é uma ferramenta valiosa para
+                    qualquer negócio. Ela simplifica a conversão de visitantes em clientes, fornece informações claras,
+                    aumenta a visibilidade e ajuda a economizar tempo e recursos. Potencialize seu sucesso online com uma
+                    landing</p>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-20 w-full justify-center gap-y-10 text-sinc-200" id="cardList">
+                <div class="w-72 h-[215px] border border-zinc-200 bg-zinc-200/10 p-4
+                shadow-lg shadow-zinc-200/20 
+                rounded-[25px] flex flex-col gap-2 items-center">
+                    <div class="flex gap-4 p-2 items-center justify-center border-b border-zinc-200 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" stroke-miterlimit="1.5" d="M8 19a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"/><path d="M10.05 17H15V6.6a.6.6 0 0 0-.6-.6H1m4.65 11H3.6a.6.6 0 0 1-.6-.6v-4.9"/><path stroke-linejoin="round" d="M2 9h4"/><path d="M15 9h5.61a.6.6 0 0 1 .548.356l1.79 4.028a.6.6 0 0 1 .052.243V16.4a.6.6 0 0 1-.6.6h-1.9M15 17h1"/></g></svg>
+                        <h1 class="font-bold">ENTREGA RÁPIDA</h1>
+                    </div>
+                    <p class="text-justify">
+                        Nossas landing pages são entregues rapidamente graças à minha dedicação exclusiva, experiência e eficiência operacional
+                    </p>
+                </div>
+                <div class="w-72 h-[215px] border border-zinc-200 bg-zinc-200/10 p-4
+                shadow-lg shadow-zinc-200/20 
+                rounded-[25px] flex flex-col gap-2 items-center">
+                    <div class="flex gap-4 p-2 items-center justify-center border-b border-zinc-200 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13.1c-.1 0-.3.1-.4.2l-1 1l2.1 2.1l1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8l-6.1 6V23h2.1l6.1-6.1l-2.1-2M21 3h-8v6h8V3m-2 4h-4V5h4v2m-6 11.06V11h8v.1c-.76 0-1.43.4-1.81.79L18.07 13H15v3.07l-2 1.99M11 3H3v10h8V3m-2 8H5V5h4v6m2 9.06V15H3v6h8v-.94M9 19H5v-2h4v2Z"/></svg>
+                        <h1 class="font-bold">DESIGN ÚNICO</h1>
+                    </div>
+                    <p class="text-justify">
+                        Designs de landing pages exclusivos que refletem a singularidade da sua marca e cativam seu público-alvo.
+                    </p>
+                </div>
+                <div class="w-72 h-[215px] border border-zinc-200 bg-zinc-200/10 p-4
+                shadow-lg shadow-zinc-200/20 
+                rounded-[25px] flex flex-col gap-2 items-center">
+                    <div class="flex gap-4 p-2 items-center justify-center border-b border-zinc-200 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="currentColor" d="M15 4a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33l-1.06 1.06L14 12.4V8M2 18a1 1 0 0 1-1-1a1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2H2m1-5a1 1 0 0 1-1-1a1 1 0 0 1 1-1h2.05L5 12l.05 1H3m1-5a1 1 0 0 1-1-1a1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2H4Z"/></svg>
+                        <h1 class="font-bold">VELOCIDADE DE CARREGAMENTO</h1>
+                    </div>
+                    <p class="text-justify">
+                        Landing pages eficientes e ágeis, otimizadas para carregamento rápido e melhor experiência do usuário.
+                    </p>
+                </div>
+                <div class="w-72 h-[215px] border border-zinc-200 bg-zinc-200/10 p-4
+                shadow-lg shadow-zinc-200/20 
+                rounded-[25px] flex flex-col gap-2 items-center">
+                    <div class="flex gap-4 p-2 items-center justify-center border-b border-zinc-200 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6v10h5v-4a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v4h2V6H4M0 20v-2h4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h4v2h-6a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2H0m11.5 0a.5.5 0 0 0-.5.5a.5.5 0 0 0 .5.5a.5.5 0 0 0 .5-.5a.5.5 0 0 0-.5-.5m4 0a.5.5 0 0 0-.5.5a.5.5 0 0 0 .5.5a.5.5 0 0 0 .5-.5a.5.5 0 0 0-.5-.5M13 20v1h1v-1h-1m-2-8v7h5v-7h-5Z"/></svg>
+                        <h1 class="font-bold">RESPONSIVIDADE</h1>
+                    </div>
+                    <p class="text-justify">
+                        Priorizamos a responsividade para garantir que suas landing pages se adaptem perfeitamente a todos os dispositivos e telas..
+                    </p>
+                </div>
+                <div class="w-72 h-[215px] border border-zinc-200 bg-zinc-200/10 p-4
+                shadow-lg shadow-zinc-200/20 
+                rounded-[25px] flex flex-col gap-2 items-center">
+                    <div class="flex gap-4 p-2 items-center justify-center border-b border-zinc-200 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17.73 19.875A2.225 2.225 0 0 1 15.782 21H8.499a2.222 2.222 0 0 1-1.947-1.158l-4.272-6.75a2.269 2.269 0 0 1 0-2.184l4.272-6.75A2.225 2.225 0 0 1 8.498 3h7.285c.809 0 1.554.443 1.947 1.158l3.98 6.75a2.33 2.33 0 0 1 0 2.25l-3.98 6.75v-.033z"/><path d="M8 11.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m6 2.5l2 2"/></g></svg>
+                        <h1 class="font-bold">SEO OTIMIZADO</h1>
+                    </div>
+                    <p class="text-justify">
+                        Nossas landing pages têm SEO otimizado para melhorar a visibilidade online, alcançando mais potenciais clientes.
+                    </p>
+                </div>
+                
+
+            </div>
+        </section>
+        
     </main>
 </template>
 
@@ -172,7 +248,9 @@ main {
 textarea {
     @apply w-full h-52 bg-transparent outline-none border border-zinc-200/50 rounded p-2
 }
-
+#cardList * svg{
+    @apply text-emerald-300
+}
 #formSection {
     background-image: url('/linksBackground.png');
     background-position: center;
@@ -186,7 +264,6 @@ textarea {
     box-shadow: 0px 0px 129px 12px rgba(255, 255, 255, 0.131) inset;
     backdrop-filter: blur(15px);
 }
-
 /* #ladingAbout{
     background-image: url('/definition.png');
     background-position: center;
