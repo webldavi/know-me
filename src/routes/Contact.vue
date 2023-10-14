@@ -40,7 +40,7 @@ function sendMessage(){
                     <h1 class="font-bold text-lg">Preencha o formulário<br> e entre em contato comigo!</h1>
                     
                 </div>
-                <div class="flex flex-wrap w-full h-max px-2 pb-2 gap-y-4">
+                <div class="flex flex-wrap items-center w-full h-max px-2 pb-2 gap-y-4">
                     <input type="text" class="w-[49%]" placeholder="Seu nome" v-model="form.name">
                     <select v-model="form.subject" class="w-[49%] bg-transparent text-white  toutline-none border-b border-zinc-200/50" placeholder="Seu Objetivo">
                         <option value="" disabled class="text-black/50">O que deseja fazer?</option>
