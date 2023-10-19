@@ -52,7 +52,11 @@ function sendMessage() {
                         </select>
                         <textarea v-model="form.message" placeholder="Escreva sua mensagem"></textarea>
                         <button @click="sendMessage"
-                            class="w-full p-2 bg-[#41bd96] hover:bg-[#2fa27d] rounded font-bold">Quero minha própria página
+                            id="buttonForm"
+                            class="w-full p-2 rounded font-bold text-zinc-800 hover:text-zinc-100 transition-all
+                            bg-gradient-to-r from-emerald-600 via-emerald-300 to-emerald-600 border border-emerald-300
+                             hover:from-emerald-800 hover:via-emerald-500 hover:to-emerald-800 hover:border-emerald-500
+                            ">Quero minha própria página
                             web!</button>
                     </div>
                 </div>
@@ -80,15 +84,15 @@ function sendMessage() {
                 </div>
             </div>
         </section>
-        <section class="w-full min-h-screen flex flex-col md:flex-row items-center  justify-center" id="ladingAbout">
-            <div class="flex flex-col items-start gap-12 flex-1">
+        <section class="w-full min-h-screen flex flex-col md:flex-row items-center justify-center" :style="{padding: '3rem'}" id="ladingAbout">
+            <div class="flex flex-col items-center gap-12 flex-1">
                 <div class="flex gap-2 items-center justify-center">
                     <img src="/website.png" alt="Emoji" class="w-24 h-24">
                     <h1 class="text-4xl lg:text-6xl font-bold">O que é uma lading page?</h1>
                 </div>
                 <p class="w-full max-w-[72rem] text-xl text-center opacity-80">Uma landing page é uma página da web criada para direcionar a atenção do visitante a uma oferta específica e incentivá-lo a tomar uma ação desejada, como preencher um formulário ou fazer uma compra. É projetada para conversões eficazes.</p>
             </div>
-            <div class="flex-1 h-full">
+            <div class="flex-1 h-full flex items-center justify-center">
                 <img src="/websitess.png" alt="websites">
             </div>
             
@@ -107,7 +111,7 @@ function sendMessage() {
                     <div class="flex flex-col  max-w-[28rem] gap-4">
                         <div class="flex gap-2 items-center">
                             <img src="/1st.png" alt="Emoji" class="w-16 h-16">
-                            <h1 class="text-3xl h-max">Atração de clientes</h1>
+                            <h1 class="text-3xl h-max font-bold">Atração de clientes</h1>
                         </div>
                         <p class="pl-[4.5rem] opacity-80 text-left text-xl">
                             Uma landing page é uma poderosa ferramenta de atração de clientes, fornecendo informações
@@ -118,7 +122,7 @@ function sendMessage() {
                     <div class="flex flex-col  max-w-[28rem] gap-4">
                         <div class="flex gap-2 items-center">
                             <img src="/2st.png" alt="Emoji" class="w-16 h-16">
-                            <h1 class="text-3xl h-max">Economia de tempo</h1>
+                            <h1 class="text-3xl h-max font-bold">Economia de tempo</h1>
                         </div>
                         <p class="pl-[4.5rem] opacity-80 text-left text-xl">Ter uma landing page economiza tempo ao oferecer
                             informações claras e diretas aos visitantes, acelerando a tomada de decisão e a conversão.
@@ -128,7 +132,7 @@ function sendMessage() {
                     <div class="flex flex-col  max-w-[28rem] gap-4">
                         <div class="flex gap-2 items-center">
                             <img src="/3st.png" alt="Emoji" class="w-16 h-16">
-                            <h1 class="text-3xl h-max">Facilidade de compartilhamento</h1>
+                            <h1 class="text-3xl h-max font-bold">Facilidade de compartilhamento</h1>
                         </div>
                         <p class="pl-[4.5rem] opacity-80 text-left text-xl">Uma landing page simplifica o compartilhamento de
                             informações,
@@ -139,7 +143,7 @@ function sendMessage() {
             </div>
         </section>
         <section class="w-full min-h-screen flex flex-col items-center gap-2" id="">
-            <div class="w-max h-max p-2 ml-20 px-3 rounded-full bg-emerald-300 text-emerald-900 flex gap-2 items-center">
+            <div class="w-max h-max p-2 ml-20 px-3 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-300 to-emerald-600 border border-emerald-300 text-emerald-950 flex gap-2 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.285 2.142a3 3 0 0 0-4.57 0l-.042.05a1 1 0 0 1-.842.348l-.065-.005a3 3 0 0 0-3.23 3.231l.004.065a1 1 0 0 1-.348.842l-.05.042a3 3 0 0 0 0 4.57l.05.042a1 1 0 0 1 .348.842l-.005.065A3.002 3.002 0 0 0 8 15.429V22a1 1 0 0 0 1.555.832L12 21.202l2.445 1.63A1 1 0 0 0 16 22v-6.57a3.002 3.002 0 0 0 2.465-3.196l-.005-.065a1 1 0 0 1 .348-.842l.05-.042a3 3 0 0 0 0-4.57l-.05-.042a1 1 0 0 1-.348-.842l.005-.065a3 3 0 0 0-3.231-3.23l-.065.004a1 1 0 0 1-.842-.348l-.042-.05ZM10 20.132V16.15a3.002 3.002 0 0 0 4 0v3.98l-1.445-.963a1 1 0 0 0-1.11 0L10 20.131Zm4.707-11.425a1 1 0 0 0-1.414-1.414L11 9.586l-.293-.293a1 1 0 0 0-1.414 1.414l1 1a1 1 0 0 0 1.414 0l3-3Z" clip-rule="evenodd"/></svg>
                 <h1 class="font-bold text-lg">Selo de qualidade</h1>
             </div>
@@ -213,13 +217,11 @@ function sendMessage() {
 
             </div>
         </section>
-        
     </main>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     font-family: 'Poppins', sans-serif;
     transition: all 300ms;
@@ -245,6 +247,7 @@ main {
     @apply bg-[#18181b]
 }
 
+
 textarea {
     @apply w-full h-52 bg-transparent outline-none border border-zinc-200/50 rounded p-2
 }
@@ -264,9 +267,13 @@ textarea {
     box-shadow: 0px 0px 129px 12px rgba(255, 255, 255, 0.131) inset;
     backdrop-filter: blur(15px);
 }
-/* #ladingAbout{
-    background-image: url('/definition.png');
-    background-position: center;
-    background-size: cover;
+/* #buttonForm{
+    transition: all 300ms;
+    background: linear-gradient(180deg, #059669 0%, #6EE7B7 50%, #059669 100%);
+    stroke-width: 4px;
+    stroke: #6EE7B7;
+}
+#buttonForm:hover{
+    background: linear-gradient(180deg, #036949 0%, #54b890 50%, #036949 100%);
 } */
 </style>
