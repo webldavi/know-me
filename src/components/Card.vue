@@ -1,6 +1,6 @@
 <template>
 
-    <div class="cardContainer">
+    <div class="cardContainer" id="vibracy">
         <img :src="`/${props.image}.webp`" :alt="props.title">
         <div class="content">
             <h1 class="text-xl font-bold">{{ props.title }}</h1>
@@ -26,7 +26,7 @@ const props = defineProps(["image", "title", "desc", "techs", "link"])
 <style scoped>
 .cardContainer{
     @apply w-[18rem] h-[18rem] flex flex-col gap-4 
-    relative overflow-hidden shadow shadow-zinc-400
+    relative overflow-hidden
     rounded-lg
 }
 .content{

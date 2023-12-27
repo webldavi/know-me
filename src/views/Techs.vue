@@ -8,14 +8,14 @@
                 }">
                     <img :src="skill.link" alt="Imagem da tecnologia" >
                 </div>
-                <div class="hover">
-                    <div class="content" :class="{'bg-zinc-800': themeStore.getTheme, 'bg-white': !themeStore.getTheme}">
+                <div class="hover" id="vibracyHover">
+                    <div class="content" >
                         <div class="image" :style="{ backgroundColor: skill.mainColor + '80' }">
                             <img :src="skill.link" alt="Imagem da tecnologia" >
                         </div>
-                        <div>
+                        <div class="text-white">
                             <h1 class="font-bold text-lg">{{ skill.skillName }}</h1>
-                            <p class="opacity-50 font-bold">{{ skill.skillDesc }}</p>
+                            <p class="opacity-75 font-bold">{{ skill.skillDesc }}</p>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,6 @@ const skillStore = useSkillStore()
 }
 .techContainer > div > .skill > .hover > .content{
     @apply w-full sm:max-w-[30rem] text-sm flex flex-row gap-2 p-3 rounded-lg
-    shadow shadow-zinc-600
 }
 
 .techContainer > div > .skill > .hover > .content > .image{
@@ -68,10 +67,13 @@ const skillStore = useSkillStore()
     @apply w-full h-full rounded-lg
 }
 .techContainer > div > .skill > .image{
-    @apply w-40 h-40 min-w-[10rem] p-4 bg-opacity-75 rounded-lg shadow-sm shadow-zinc-600
+    @apply w-40 h-40 min-w-[10rem] p-4 bg-opacity-75 rounded-lg border border-white
 }
 
 .techContainer > div > .skill > .image > img{
     @apply w-full h-full rounded-lg
+}
+#vibracyHover{
+    @apply bg-zinc-500/30 backdrop-blur-lg border border-zinc-200 rounded-lg
 }
 </style>

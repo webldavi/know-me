@@ -1,5 +1,5 @@
 <template>
-    <div class="postContainer">
+    <div class="postContainer" id="vibracy">
         <img :src="src" alt="banner da postagem">
         <div class="content">
             <div class="tags">
@@ -19,7 +19,7 @@ const props = defineProps(['src', 'tags', 'url'])
 <style scoped>
 .postContainer{
     @apply w-72 h-[28rem] flex flex-col gap-6 overflow-hidden rounded-lg
-    shadow shadow-zinc-600/50
+    
 }
 /* .postContainer > img{
     @apply h-52 

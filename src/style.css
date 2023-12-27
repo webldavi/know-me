@@ -6,3 +6,7 @@
 *{
     transition: all 150ms;
 }
+
+#vibracy{
+    @apply bg-zinc-500/30 backdrop-blur-lg border border-zinc-200
+}

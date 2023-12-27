@@ -1,6 +1,6 @@
 <template>
     <section class="knowmeContainer">
-        <div class="profile" data-aos="fade-right" data-aos-duration="800">
+        <div class="profile" data-aos="fade-right" data-aos-duration="800" id="vibracy">
             <img src="../assets/photo.jpg" alt="Luís Daví Rebouças | Foto de perfil"/>
             <h1 class="text-2xl font-bold">Luís Daví Rebouças</h1>
             <p class="font-bold text text-lg opacity-70">Desenvolvedor Front-end Jr.</p>
@@ -13,7 +13,7 @@
                 </a>
             </div>
         </div>
-        <div class="about" data-aos="fade-left" data-aos-duration="800">
+        <div class="about" data-aos="fade-left" data-aos-duration="800" id="vibracy">
             <h1 class="text-2xl lg:text-4xl font-bold">Sobre mim</h1>
             <p class="text-sm md:text-base lg:text-lg xl:text-xl opacity-70">
                 Oi, meu nome é Luís Daví, e aos meus 19 anos, sou completamente apaixonado por tecnologia. Desde que me lembro, fui cativado pelo mundo da inovação e do progresso tecnológico. É incrível como a tecnologia está constantemente mudando e moldando o nosso mundo, e eu sinto que estou apenas começando a arranhar a superfície de tudo o que posso aprender e conquistar nessa área.
@@ -109,5 +109,7 @@ const links = ref([
     @apply w-max h-max p-3 flex items-center justify-center transition-all rounded-lg
     cursor-pointer hover:-translate-y-2 hover:shadow 
 }
+
+
 
 </style>
