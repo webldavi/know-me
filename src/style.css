@@ -10,3 +10,7 @@
 #vibracy{
     @apply bg-zinc-500/30 backdrop-blur-lg border border-zinc-200
 }
+
+html {
+    scroll-behavior: smooth;
+  }

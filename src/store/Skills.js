@@ -30,14 +30,14 @@ export const useSkillStore = defineStore("skillStore", {
                     skillName: "VueJS",
                     skillDesc:
                         "VueJs, um Framework usado para criar páginas SPA(single page application).",
-                    link: "https://camo.githubusercontent.com/077997d77bfa74b144c9e286e65143b4edc547dc948098491264bb2dde282d6b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f7675656a732f7675656a732d6f726967696e616c2e737667",
+                    link: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png",
                     mainColor: '#49b883'
                 },
                 {
                     skillName: "ReactJS",
                     skillDesc:
                         "ReactJS é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
-                    link: "https://camo.githubusercontent.com/27d0b117da00485c56d69aef0fa310a3f8a07abecc8aa15fa38c8b78526c60ac/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742f72656163742d6f726967696e616c2e737667",
+                    link: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
                     mainColor: '#61dafb'
                 },
                 {
@@ -51,7 +51,7 @@ export const useSkillStore = defineStore("skillStore", {
                     skillName: "TypeScript",
                     skillDesc:
                         "É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
-                    link: "https://camo.githubusercontent.com/aa8b3e6b6fc55ea158e132e1c33ba6aa7fe49706a4e4bd64701af1cf89f514b5/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f747970657363726970742f747970657363726970742d6f726967696e616c2e737667",
+                    link: "https://iconape.com/wp-content/png_logo_vector/typescript.png",
                     mainColor: '#247acc'
                 },
             ],
