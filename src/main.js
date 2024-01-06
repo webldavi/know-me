@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import * as VueRouter from 'vue-router'
 import Projects from './routes/Projects.vue';
 import Blog from './routes/Blog.vue';
+import Techs from './routes/Techs.vue';
 AOS.init();
 
 
@@ -21,6 +22,9 @@ const routes = [
     },
     {
         path: '/blog', component: Blog
+    },
+    {
+        path: '/techs', component: Techs
     }
 ]
 
