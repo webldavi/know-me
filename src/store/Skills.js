@@ -235,7 +235,7 @@ export const useSkillStore = defineStore("skillStore", {
                         },
                         {
                             name: 'Discord',
-                            link: 'https://logosmarcas.net/wp-content/uploads/2020/12/Discord-Logo.png'
+                            link: 'https://www.shutterstock.com/image-vector/vinnytsia-ukraine-may-7-2023-600nw-2299584421.jpg'
                         },
                         {
                             name: 'Notion',
