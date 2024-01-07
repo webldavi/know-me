@@ -10,6 +10,10 @@ import * as VueRouter from 'vue-router'
 import Projects from './routes/Projects.vue';
 import Blog from './routes/Blog.vue';
 import Techs from './routes/Techs.vue';
+
+import { inject } from '@vercel/analytics';
+ 
+inject()
 AOS.init();
 
 
