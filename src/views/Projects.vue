@@ -13,8 +13,13 @@
       </div>
       <div class="w-full h-max flex flex-col gap-4">
         <div v-for="(p, i) in projects" :key="i" data-aos="fade-right" data-aos-duration="800" :data-aos-delay="i <= 1 ? (i+1)*250 : 0"
-          class="flex flex-col lg:flex-row gap-4 items-center border-b border-zinc-800">
-          <img class="w-full lg:w-[30%] rounded-md" :src="`${p.nameFile}.webp`" alt="">
+          class="flex flex-col lg:flex-row gap-4 items-center border-b border-zinc-800 project">
+          <div class="lg:w-[25%] h-max relative">
+            <img class="w-full rounded-md" :src="`${p.nameFile}.webp`" alt="" shadow>
+            <img class="w-full absolute top-0 -z-10 rounded-md opacity-70" first :src="`${p.nameFile}.webp`" alt="">
+            <img class="w-full absolute top-0 -z-10 rounded-md opacity-40" secound :src="`${p.nameFile}.webp`" alt="">
+
+          </div>
           <div class="flex-1 flex flex-col gap-2">
             <span class="font-semibold text-xl">{{ p.name }}</span>
             <p class="font-medium text-zinc-300 text-sm lg:text-lg">{{ p.desc }}</p>
@@ -32,37 +37,6 @@
 <script setup>
 import { ref } from 'vue'
 const projects = ref([
-{
-  name: "Tail-theme",
-  desc: "Tail-theme foi desenvolvido usando as cores padrões do tailwind CSS, assim criando um tema agradavel e com cores aprovadas pela comunidade",
-  rep: "",
-  nameFile: "tail-theme",
-  typeLinkText: "Repositório",
-  toLink: false,
-  link: "https://github.com/webldavi/tail-theme",
-  techs: [
-    {
-      name: "CSS3",
-      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
-    },
-    {
-      name: "Javascript",
-      src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
-    },
-    {
-      name: "Node.js",
-      src: "https://nodejs.org/static/images/favicons/favicon.png",
-    },
-    {
-      name: "Json",
-      src: "https://img.icons8.com/?size=1080&id=50024&format=png",
-    },
-    {
-      name: "Tailwind CSS",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
-    },
-  ],
-},
 {
   name: "SyncEduc",
   desc: "O SyncEduc foi um trabalho de conclusão de curso, onde eu e meus amigos desenvolvemos uma aplicação full-stack de uma plataforma de cursos online",
@@ -91,6 +65,99 @@ const projects = ref([
     {
       name: "Vue.js",
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png",
+    },
+    {
+      name: "Tailwind CSS",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+    },
+  ],
+},
+{
+  name: "Laravel course page",
+  desc: "Este foi um freelancer que fiz, resumidamente uma pagina para um curso gratuito de laravel",
+  rep: "",
+  nameFile: "laravelCourse",
+  typeLinkText: "Link",
+  toLink: true,
+  link: "https://cursolaravel.com.br/",
+  techs: [
+    {
+      name: "HTML5",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS3",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    },
+    {
+      name: "Javascript",
+      src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
+    },
+    {
+      name: "Vue.js",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png",
+    },
+    {
+      name: "Tailwind CSS",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+    },
+  ],
+},
+{
+  name: "n0d3rr Syntax Highlighter",
+  desc: "é um editor de código cuja o objetivo é facilitar a escrita de documentações com exemplos de códigos",
+  rep: "",
+  nameFile: "NSH",
+  typeLinkText: "Link",
+  toLink: true,
+  link: "https://n0d3rr-sh.vercel.app/#/",
+  techs: [
+    {
+      name: "HTML5",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS3",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    },
+    {
+      name: "Javascript",
+      src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
+    },
+    {
+      name: "Vue.js",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png",
+    },
+    {
+      name: "Tailwind CSS",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+    },
+  ],
+},
+{
+  name: "Tail-theme",
+  desc: "Tail-theme foi desenvolvido usando as cores padrões do tailwind CSS, assim criando um tema agradavel e com cores aprovadas pela comunidade",
+  rep: "",
+  nameFile: "tail-theme",
+  typeLinkText: "Repositório",
+  toLink: false,
+  link: "https://github.com/webldavi/tail-theme",
+  techs: [
+    {
+      name: "CSS3",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    },
+    {
+      name: "Javascript",
+      src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
+    },
+    {
+      name: "Node.js",
+      src: "https://nodejs.org/static/images/favicons/favicon.png",
+    },
+    {
+      name: "Json",
+      src: "https://img.icons8.com/?size=1080&id=50024&format=png",
     },
     {
       name: "Tailwind CSS",
@@ -164,68 +231,6 @@ const projects = ref([
     },
   ],
 },
-{
-  name: "n0d3rr Syntax Highlighter",
-  desc: "é um editor de código cuja o objetivo é facilitar a escrita de documentações com exemplos de códigos",
-  rep: "",
-  nameFile: "NSH",
-  typeLinkText: "Link",
-  toLink: true,
-  link: "https://n0d3rr-sh.vercel.app/#/",
-  techs: [
-    {
-      name: "HTML5",
-      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
-    },
-    {
-      name: "CSS3",
-      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
-    },
-    {
-      name: "Javascript",
-      src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
-    },
-    {
-      name: "Vue.js",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png",
-    },
-    {
-      name: "Tailwind CSS",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
-    },
-  ],
-},
-{
-  name: "Laravel course page",
-  desc: "Este foi um freelancer que fiz, resumidamente uma pagina para um curso gratuito de laravel",
-  rep: "",
-  nameFile: "laravelCourse",
-  typeLinkText: "Link",
-  toLink: true,
-  link: "https://cursolaravel.com.br/",
-  techs: [
-    {
-      name: "HTML5",
-      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
-    },
-    {
-      name: "CSS3",
-      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
-    },
-    {
-      name: "Javascript",
-      src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
-    },
-    {
-      name: "Vue.js",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png",
-    },
-    {
-      name: "Tailwind CSS",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
-    },
-  ],
-},
 ])
 </script>
 
@@ -236,14 +241,21 @@ const projects = ref([
 }
 
 .projects{
-  @apply w-full min-h-screen border border-zinc-800 rounded-lg p-4
+  @apply w-full min-h-screen border border-zinc-800 rounded-lg p-4 flex flex-col gap-4
 }
 
-.projects * img{
+.projects * .project img{
+  transition: all 300ms linear;
   @apply shadow-2xl shadow-purple-700/20 
 }
 @media (min-width: 1024px){
-  .projects * img{
+  .projects * .project:hover div img[first]{
+    transform: translateX(-10px) translateY(10px) perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(1deg) scaleY(.9) scaleX(.95) translate(3%) translateY(-3%);
+  }
+  .projects * .project:hover div img[secound]{
+    transform: translateX(-20px) translateY(20px) perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(1deg) scaleY(.9) scaleX(.95) translate(3%) translateY(-3%);
+  }
+  .projects * .project:hover div img{
     transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(1deg) scaleY(.9) scaleX(.95) translate(3%) translateY(-3%);
   }
 }
