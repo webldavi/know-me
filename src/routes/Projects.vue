@@ -7,6 +7,13 @@
 <script setup>
 import { ref } from 'vue'
 import Projects from '../views/Projects.vue';
+import { onMounted } from 'vue';
+import { useAsideStore } from '../store/Aside';
+const asideStore = useAsideStore()
+
+onMounted(() => {
+    asideStore.updateShow(false)
+})
 const projects = ref([
   {
     name: "Tail-theme",

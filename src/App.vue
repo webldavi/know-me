@@ -22,12 +22,12 @@
         Blog
       </router-link>
     </div>
-    <button @click="()=>showAside = true" class="flex md:hidden text-white p-2 border border-zinc-700 rounded-md hover:bg-zinc-800">
+    <button @click="asideStore.updateShow(true)" class="flex md:hidden text-white p-2 border border-zinc-700 rounded-md hover:bg-zinc-800">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
     </button>
   </nav>
-  <aside :class="{'closed': !showAside, 'opened': showAside}" class="fixed top-0 right-0 bg-zinc-900/50 backdrop-blur p-4 z-20 w-full h-full flex flex-col justify-between items-center">
-    <button @click="()=>showAside = false" class="font-bold text-xl text-white flex flex-row gap-2 items-center justify-center">
+  <aside :class="{'closed': !asideStore.show, 'opened': asideStore.show}" class="fixed top-0 right-0 bg-zinc-900/50 backdrop-blur p-4 z-20 w-full h-full flex flex-col justify-between items-center">
+    <button @click="asideStore.updateShow(false)" class="font-bold text-xl text-white flex flex-row gap-2 items-center justify-center">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
       Fechar
     </button>
@@ -68,9 +68,11 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
+import { ref, onMounted } from 'vue'
+import {useAsideStore} from './store/Aside'
 
-const showAside = ref(false)
+const asideStore = useAsideStore()
+
 </script>
 
 <style scoped>

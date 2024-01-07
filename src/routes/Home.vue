@@ -11,6 +11,13 @@
   import Projects from '../views/Projects.vue'
   import Blog from '../views/Blog.vue';
   import Techs from '../views/Techs.vue';
+  import { onMounted } from 'vue';
+  import { useAsideStore } from '../store/Aside';
+  const asideStore = useAsideStore()
+
+  onMounted(() => {
+      asideStore.updateShow(false)
+  })
   
   const themeStore = useThemeStore()
   

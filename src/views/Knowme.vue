@@ -3,8 +3,8 @@
         <div class="profile" data-aos="fade-right" data-aos-duration="800">
             <img src="../assets/photo.jpg" alt="Luís Daví Rebouças | Foto de perfil" />
             <div class="info">
-                <h1 class="text-2xl font-bold" id="name">Luís Daví Rebouças</h1>
-                <p class="text-lg opacity-70">Desenvolvedor Front-end Jr.</p>
+                <h1 class="font-bold" id="name">Luís Daví Rebouças</h1>
+                <p class="text-lg opacity-70" id="desc">Desenvolvedor Front-end Jr.</p>
                 <div class="w-full flex flex-wrap flex-row gap-2 mt-1">
                     <div v-for="skill, index in skillStore.getSkills" 
                     :class="{'bg-zinc-800 text-white': themeStore.getTheme, 'bg-zinc-400/25 text-zinc-800': !themeStore.getTheme}" class="w-max h-max px-2  text-xs sm:text-sm font-medium rounded-full">{{ skill.skillName }}</div>
@@ -14,12 +14,13 @@
         <div class="about"  data-aos="fade-right" data-aos-duration="800" data-aos-delay="300"
         :class="{'border-zinc-700':themeStore.getTheme, 'border-zinc-400/50': !themeStore.getTheme}">
             <h1 class="text-xl font-bold"> 👋🏼 Sobre mim</h1>
-            <p class="text-sm md:text-base xl:text-lg opacity-70">
+            <p class="text-base xl:text-lg opacity-70">
                 Oi, meu nome é Luís Daví, e aos meus 19 anos, sou completamente apaixonado por tecnologia. Desde que me lembro, fui cativado pelo mundo da inovação e do progresso tecnológico. É incrível como a tecnologia está constantemente mudando e moldando nosso mundo, e sinto que estou apenas começando a explorar as vastas possibilidades de aprendizado e conquista que essa área oferece.
             </p>
         </div>
         <div class="w-full flex flex-col lg:flex-row gap-4" id="stats">
-            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="600" class="min-h-full flex flex-col justify-between gap-4 p-4 rounded-md border"  :class="{'border-zinc-700':themeStore.getTheme, 'border-zinc-400/50': !themeStore.getTheme}">
+            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="600" 
+            class="min-h-full flex flex-col justify-between gap-4 p-4 rounded-md border"  :class="{'border-zinc-700':themeStore.getTheme, 'border-zinc-400/50': !themeStore.getTheme}">
                 <span class="font-bold text-xl flex flex-row items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="#fff" d="M128.001 30C72.779 30 28 74.77 28 130.001c0 44.183 28.653 81.667 68.387 94.89c4.997.926 6.832-2.169 6.832-4.81c0-2.385-.093-10.262-.136-18.618c-27.82 6.049-33.69-11.799-33.69-11.799c-4.55-11.559-11.104-14.632-11.104-14.632c-9.073-6.207.684-6.079.684-6.079c10.042.705 15.33 10.305 15.33 10.305c8.919 15.288 23.394 10.868 29.1 8.313c.898-6.464 3.489-10.875 6.349-13.372c-22.211-2.529-45.56-11.104-45.56-49.421c0-10.918 3.906-19.839 10.303-26.842c-1.039-2.519-4.462-12.69.968-26.464c0 0 8.398-2.687 27.508 10.25c7.977-2.215 16.531-3.326 25.03-3.364c8.498.038 17.06 1.149 25.051 3.365c19.087-12.939 27.473-10.25 27.473-10.25c5.443 13.773 2.019 23.945.98 26.463c6.412 7.003 10.292 15.924 10.292 26.842c0 38.409-23.394 46.866-45.662 49.341c3.587 3.104 6.783 9.189 6.783 18.519c0 13.38-.116 24.149-.116 27.443c0 2.661 1.8 5.779 6.869 4.797C199.383 211.64 228 174.169 228 130.001C228 74.771 183.227 30 128.001 30M65.454 172.453c-.22.497-1.002.646-1.714.305c-.726-.326-1.133-1.004-.898-1.502c.215-.512.999-.654 1.722-.311c.727.326 1.141 1.01.89 1.508m4.919 4.389c-.477.443-1.41.237-2.042-.462c-.654-.697-.777-1.629-.293-2.078c.491-.442 1.396-.235 2.051.462c.654.706.782 1.631.284 2.078m3.374 5.616c-.613.426-1.615.027-2.234-.863c-.613-.889-.613-1.955.013-2.383c.621-.427 1.608-.043 2.236.84c.611.904.611 1.971-.015 2.406m5.707 6.504c-.548.604-1.715.442-2.57-.383c-.874-.806-1.118-1.95-.568-2.555c.555-.606 1.729-.435 2.59.383c.868.804 1.133 1.957.548 2.555m7.376 2.195c-.242.784-1.366 1.14-2.499.807c-1.13-.343-1.871-1.26-1.642-2.052c.235-.788 1.364-1.159 2.505-.803c1.13.341 1.871 1.252 1.636 2.048m8.394.932c.028.824-.932 1.508-2.121 1.523c-1.196.027-2.163-.641-2.176-1.452c0-.833.939-1.51 2.134-1.53c1.19-.023 2.163.639 2.163 1.459m8.246-.316c.143.804-.683 1.631-1.864 1.851c-1.161.212-2.236-.285-2.383-1.083c-.144-.825.697-1.651 1.856-1.865c1.183-.205 2.241.279 2.391 1.097"/></g></svg>
                     Github
@@ -66,7 +67,8 @@
                 </a>
             </div>
 
-            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="900" class="min-h-full flex flex-col gap-4 p-4 rounded-md border"  :class="{'border-zinc-700':themeStore.getTheme, 'border-zinc-400/50': !themeStore.getTheme}">
+            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="900" 
+            class="min-h-full flex flex-col gap-4 p-4 rounded-md border"  :class="{'border-zinc-700':themeStore.getTheme, 'border-zinc-400/50': !themeStore.getTheme}">
                 <span class="font-bold text-xl flex flex-row items-center gap-2">
                     <svg width="22" height="22" viewBox="0 0 485 672" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M312.478 32.5987C303.853 22.4603 293.128 14.3171 281.045 8.73262C268.963 3.14817 255.811 0.255859 242.5 0.255859C229.189 0.255859 216.037 3.14817 203.955 8.73262C191.872 14.3171 181.147 22.4603 172.522 32.5987L171.236 34.13C168.089 37.8217 164.11 40.7131 159.627 42.5659C155.144 44.4188 150.284 45.1802 145.449 44.7875L143.459 44.6343C130.196 43.5714 116.861 45.4018 104.375 49.9991C91.8888 54.5963 80.5504 61.8506 71.1436 71.2603C61.7368 80.67 54.486 92.0107 49.8926 104.498C45.2993 116.985 43.4729 130.321 44.54 143.584L44.6625 145.574C45.0553 150.409 44.2939 155.269 42.441 159.752C40.5881 164.235 37.6967 168.214 34.005 171.361L32.4737 172.647C22.3353 181.272 14.1921 191.997 8.60766 204.08C3.02321 216.162 0.13089 229.314 0.13089 242.625C0.13089 255.936 3.02321 269.088 8.60766 281.17C14.1921 293.253 22.3353 303.978 32.4737 312.603L34.005 313.889C37.6967 317.036 40.5881 321.015 42.441 325.498C44.2939 329.981 45.0553 334.841 44.6625 339.676L44.5094 341.666C42.6852 364.44 49.4059 387.077 63.3617 405.166C77.3176 423.255 97.5087 435.499 120 439.513V640.75C119.999 646.294 121.504 651.735 124.353 656.492C127.202 661.248 131.289 665.142 136.177 667.757C141.066 670.373 146.573 671.613 152.111 671.344C157.649 671.075 163.01 669.307 167.622 666.23L242.5 616.311L317.378 666.23C321.99 669.307 327.351 671.075 332.889 671.344C338.427 671.613 343.934 670.373 348.823 667.757C353.711 665.142 357.798 661.248 360.647 656.492C363.496 651.735 365.001 646.294 365 640.75V439.544C387.497 435.529 407.693 423.281 421.649 405.185C435.606 387.09 442.323 364.445 440.491 341.666L440.337 339.676C439.945 334.841 440.706 329.981 442.559 325.498C444.412 321.015 447.303 317.036 450.995 313.889L452.526 312.603C462.665 303.978 470.808 293.253 476.392 281.17C481.977 269.088 484.869 255.936 484.869 242.625C484.869 229.314 481.977 216.162 476.392 204.08C470.808 191.997 462.665 181.272 452.526 172.647L450.995 171.361C447.303 168.214 444.412 164.235 442.559 159.752C440.706 155.269 439.945 150.409 440.337 145.574L440.491 143.584C441.554 130.321 439.723 116.986 435.126 104.5C430.529 92.0138 423.274 80.6754 413.865 71.2685C404.455 61.8617 393.114 54.6109 380.627 50.0176C368.14 45.4242 354.804 43.5979 341.541 44.665L339.551 44.7875C334.716 45.1802 329.856 44.4188 325.373 42.5659C320.89 40.7131 316.911 37.8217 313.764 34.13L312.478 32.5987ZM181.25 583.543V461.594C198.101 476.647 219.905 484.968 242.5 484.968C265.095 484.968 286.899 476.647 303.75 461.594V583.481L259.497 553.989C254.464 550.632 248.55 548.84 242.5 548.84C236.45 548.84 230.536 550.632 225.503 553.989L181.25 583.543ZM325.402 233.652C330.98 227.876 334.067 220.14 333.997 212.11C333.928 204.08 330.707 196.399 325.029 190.721C319.351 185.043 311.67 181.822 303.64 181.752C295.61 181.683 287.874 184.77 282.098 190.348L211.875 260.571L202.902 251.598C197.126 246.02 189.39 242.933 181.36 243.002C173.33 243.072 165.649 246.293 159.971 251.971C154.293 257.649 151.072 265.33 151.002 273.36C150.933 281.39 154.02 289.126 159.598 294.902L190.223 325.527C195.966 331.268 203.754 334.493 211.875 334.493C219.996 334.493 227.784 331.268 233.527 325.527L325.402 233.652Z" fill="url(#paint0_linear_205_5)"/><defs><linearGradient id="paint0_linear_205_5" x1="242.5" y1="0.255859" x2="242.5" y2="671.38" gradientUnits="userSpaceOnUse"><stop stop-color="#C78F00"/><stop offset="0.445" stop-color="#FFE5A2"/><stop offset="1" stop-color="#FFB800"/></linearGradient></defs></svg>
                     Principais cursos e eventos
@@ -236,13 +238,12 @@ onMounted(async() => {
   }
 }
 #name{
-    width: 240px;
     animation-delay: 300ms;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-
+    @apply w-[200px] sm:w-[240px]
 }
 .knowmeContainer {
     @apply w-full h-max flex flex-col gap-4 items-center lg:items-start
@@ -288,9 +289,17 @@ onMounted(async() => {
     @apply translate-x-0
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     #stats > div{
         width: calc(50% - 0.5rem);
     }
+}
+
+#name{
+    @apply text-xl sm:text-2xl
+}
+
+#desc{
+    @apply text-sm sm:text-xl
 }
 </style>
