@@ -1,5 +1,7 @@
 <template>
-    <Blog/>
+    <main class="w-full min-h-screen">
+        <Blog/>
+    </main>
 </template>
 
 <script setup>

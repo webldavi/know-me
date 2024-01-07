@@ -1,5 +1,7 @@
 <template>
-    <Projects/>
+    <main class="w-full min-h-screen">
+      <Projects/>
+    </main>
 </template>
 
 <script setup>
