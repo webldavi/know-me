@@ -13,11 +13,11 @@
       </div>
       <div class="w-full h-max flex flex-col gap-4">
         <div v-for="(p, i) in projects" :key="i" data-aos="fade-right" data-aos-duration="800" :data-aos-delay="i <= 1 ? (i+1)*250 : 0"
-          class="flex flex-col lg:flex-row gap-4 items-center border-b border-zinc-800 project">
+          class="flex flex-col lg:flex-row gap-4 items-center project px-4">
           <div class="lg:w-[25%] h-max relative">
             <img class="w-full rounded-md" :src="`${p.nameFile}.webp`" alt="" shadow>
-            <img class="w-full absolute top-0 -z-10 rounded-md opacity-70" first :src="`${p.nameFile}.webp`" alt="">
-            <img class="w-full absolute top-0 -z-10 rounded-md opacity-40" secound :src="`${p.nameFile}.webp`" alt="">
+            <img class="w-full absolute top-0 blur-[2px]  -z-10 rounded-md opacity-70" first :src="`${p.nameFile}.webp`" alt="">
+            <img class="w-full absolute top-0 blur-[4px] -z-10 rounded-md opacity-40" secound :src="`${p.nameFile}.webp`" alt="">
 
           </div>
           <div class="flex-1 flex flex-col gap-2">
