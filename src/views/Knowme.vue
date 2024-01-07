@@ -93,8 +93,7 @@
                 Entre em contato comigo
             </span>
             <p class="font-medium opacity-80">Combinando paixão e habilidades técnicas, sou um programador front-end em busca de desafios inspiradores. Se você busca um colaborador dedicado e criativo para seus projetos, estou pronto para contribuir. Além do WhatsApp e e-mail, fique à vontade para conectar-se através de outras redes sociais, como GitHub e LinkedIn. Estou ansioso para discutir como podemos trabalhar juntos para alcançar resultados excepcionais.</p>
-            <div class="w-max h-max flex flex-row gap-4">
-                <div class="links">
+            <div class="links">
                     <a v-for="link in links" :key="link.id" :class="{
                         'text-white hover:bg-purple-600': themeStore.getTheme,
                     }" :aria-label="link.desc"
@@ -102,7 +101,6 @@
                         <component :is="link.icon" alt="awdawd"></component>
                     </a>
                 </div>
-            </div>
         </div>
         <div @click="()=> showCourseImage = false" :class="{'closed': !showCourseImage, 'opened': showCourseImage}" class="w-full h-full transition-all duration-500 fixed top-0 left-0 z-20 py-8 px-40 bg-zinc-900/50 backdrop-blur">
             <img class="w-full h-full rounded-md" :src="`/${currentCourseImage}.webp`" alt="Certificado" id="certificate">
