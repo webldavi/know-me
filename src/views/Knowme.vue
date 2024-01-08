@@ -264,7 +264,7 @@ onMounted(async() => {
 }
 
 .links {
-    @apply w-full h-max flex flex-row flex-wrap gap-2 items-center justify-center
+    @apply w-full h-max flex flex-row flex-wrap gap-2 items-center justify-start
 }
 
 .links a {
