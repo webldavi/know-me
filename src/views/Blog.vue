@@ -34,6 +34,18 @@
                 <div class="flex flex-col gap-2 items-start justify-center">
                     <a :href="post.url" target="_blank" class="font-bold text-xl text-left">{{ post.title }}</a>
                     <p class="text-sm">{{ post.description }}</p>
+                    <span class="font-medium text-sm opacity-50">
+                        Publicado em
+                        {{ 
+                            new Date(post.published_at).getDate() <= 9 ? 
+                            "0" + new Date(post.published_at).getDate() :
+                            new Date(post.published_at).getDate()
+                        }}/{{ 
+                            new Date(post.published_at).getMonth() <= 9 ? 
+                            "0" + new Date(post.published_at).getMonth() :
+                            new Date(post.published_at).getMonth()
+                        }}/{{ new Date(post.published_at).getFullYear() }}
+                    </span>
                 </div>
             </div>
         </div>
