@@ -1,7 +1,7 @@
 <template>
     <section class="knowmeContainer">
         <div class="profile" data-aos="fade-right" data-aos-duration="800">
-            <img src="../assets/photo.jpg" alt="Luís Daví Rebouças | Foto de perfil" />
+            <img src="https://avatars.githubusercontent.com/u/89264926?v=4" alt="Luís Daví Rebouças | Foto de perfil" />
             <div class="info">
                 <h1 class="font-bold" id="name">Luís Daví Rebouças</h1>
                 <p class="text-lg opacity-70" id="desc">Desenvolvedor Front-end Jr.</p>
