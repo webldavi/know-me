@@ -29,7 +29,7 @@
             </a>
         </div>
         <div class="post"
-                v-for="(post, index) in postsList" :key="index" v-show="index <= 2">
+                v-for="(post, index) in postsList" :key="index" v-show="index <= 3">
                 <img class="w-full sm:w-52 xl:w-72" :src="post.cover_image" alt="">
                 <div class="flex flex-col gap-2 items-start justify-center">
                     <a :href="post.url" target="_blank" class="font-bold text-xl text-left">{{ post.title }}</a>
