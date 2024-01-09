@@ -8,13 +8,16 @@
         v-for="(c,i) in skillStore.skills" :key="i" style="z-index: 2;">
             <span class="font-bold text-2xl">{{ c.name }}</span>
             <div class="w-full h-max flex flex-row gap-4 flex-wrap">
-                <div style="z-index: 3;"
-                class="shadow-2xl shadow-purple-700/20 p-2 
+                <div style="z-index: 3;" id="techs"
+                class="shadow-2xl shadow-purple-700/20 p-2
                 h-max w-[15rem] rounded-md flex flex-row items-center justify-start gap-2 bg-zinc-800" 
                 v-for="(s, i) in c.items" data-aos="fade-right" data-aos-duration="800" :data-aos-delay="150 + (i+1)">
-                    <div class="w-12 h-12 rounded-md relative p-2 overflow-hidden">
-                        <img class="w-[125%] inset-0 h-[125%] absolute z-0  blur-lg" :src="s.link" alt="" style="z-index: -1;">
-                        <img class="w-full h-full z-10 rounded" :src="s.link" alt="">
+                    <div class="relative">
+                        <img class="w-12 inset-0 h-12 absolute scale-150 opacity-70 z-[1] brightness-200  blur-lg" :src="s.link" alt="" style="z-index: -1;">
+                        <div class="w-12 h-12 rounded-md relative p-2 overflow-hidden ">
+                            <img class="w-full inset-0 h-full scale-150 absolute z-0 blur-lg brightness-75" :src="s.link" alt="" style="z-index: -1;">
+                            <img class="w-full h-full z-10 rounded" :src="s.link" alt="">
+                        </div>
                     </div>
                     <span class="font-medium">{{ s.name }}</span>
                 </div>
@@ -31,6 +34,7 @@ const skillStore = useSkillStore()
 
 <style scoped>
 
-
-
+#techs{
+    overflow: hidden;
+}
 </style>
