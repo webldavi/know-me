@@ -14,7 +14,7 @@
                 v-for="(s, i) in c.items" data-aos="fade-right" data-aos-duration="800" :data-aos-delay="150 + (i+1)">
                     <div class="relative">
                         <img class="w-12 inset-0 h-12 absolute scale-150 opacity-70 z-[1] brightness-200  blur-lg" :src="s.link" alt="" style="z-index: -1;">
-                        <div class="w-12 h-12 rounded-md relative p-2 overflow-hidden ">
+                        <div class="w-12 h-12 rounded-md relative p-2 overflow-hidden border border-zinc-100/30">
                             <img class="w-full inset-0 h-full scale-150 absolute z-0 blur-lg brightness-75" :src="s.link" alt="" style="z-index: -1;">
                             <img class="w-full h-full z-10 rounded" :src="s.link" alt="">
                         </div>
