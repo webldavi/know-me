@@ -1,7 +1,7 @@
 <template>
     <section class="BlogContainer">
         <div class="infoCard" data-aos="fade-right" data-aos-duration="800">
-            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ewfqGUIL--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/794617/318fc00d-4d54-41b1-b521-b7433ba6b1e1.jpeg"
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--yYHbtfLd--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/794617/8b48a49f-a8d4-4ee5-afed-e8f3538936d0.png"
                 alt="Foto de perfil da dev.to">
             <h1 class="font-bold text-2xl">Luís Daví</h1>
             <div class="flex flex-row gap-4">
@@ -46,8 +46,8 @@
                         Publicado em
                         {{
                             new Date(post.published_at).getDate() <= 9 ? "0" + new Date(post.published_at).getDate() : new
-                                Date(post.published_at).getDate() }}/{{ new Date(post.published_at).getMonth() <= 9 ? "0" + new
-            Date(post.published_at).getMonth() : new Date(post.published_at).getMonth() }}/{{ new
+                                Date(post.published_at).getDate() }}/{{ new Date(post.published_at).getMonth() <= 9 ? "0" + (new
+            Date(post.published_at).getMonth() +1) : new Date(post.published_at).getMonth() }}/{{ new
         Date(post.published_at).getFullYear() }} </span>
                 </div>
             </div>
