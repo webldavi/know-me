@@ -7,7 +7,7 @@
             <div class="flex flex-row gap-4">
                 <span class="flex flex-row items-center text-zinc-400">
                     <Devto class="text-white" />
-                    @webdavi
+                    @webldavi
                 </span>
                 <span>|</span>
                 <span class="flex flex-row items-center text-zinc-400">
@@ -63,7 +63,7 @@ const postsList = ref([])
 const userData = ref({})
 
 onBeforeMount(async () => {
-    await fetch('https://dev.to/api/articles?username=webdavi').then(res => res.json()).then(res => {
+    await fetch('https://dev.to/api/articles?username=webldavi').then(res => res.json()).then(res => {
         postsList.value = res
     })
     await fetch('https://dev.to/api/users/by_username?url=webdavi').then(res => res.json()).then(res => {

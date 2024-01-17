@@ -159,7 +159,7 @@ const links = ref([
         icon: Devto,
         desc: "link para o meu perfil na dev.to",
         id: Date.now(),
-        url: "https://dev.to/webdavi"
+        url: "https://dev.to/webldavi"
     },
     
 
