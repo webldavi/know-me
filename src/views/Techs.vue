@@ -1,22 +1,33 @@
 <template>
-    <section class="techContainer">
-        <h1 class="text-2xl font-bold">Habilidades</h1>
-        <div>
-            <div v-for="(skill, index) in skillStore.getSkills" :key="index" class="skill">
-                <div class="image" :style="{
-                    backgroundColor: skill.mainColor + '80'
-                }">
-                    <img :src="skill.link" alt="Imagem da tecnologia" >
-                </div>
-                <div class="hover" id="vibracyHover">
-                    <div class="content" >
-                        <div class="image" :style="{ backgroundColor: skill.mainColor + '80' }">
-                            <img :src="skill.link" alt="Imagem da tecnologia" >
+    <section class="w-full h-full px-8 lg:px-32 flex flex-col lg:flex-row gap-8 text-white pb-20" style="z-index: 1;">
+        <div class="flex-1 flex flex-col gap-4 max-w-full lg:max-w-[24rem]">
+            <div class="w-full" data-aos="fade-right" data-aos-duration="800">
+                <span class="font-bold text-2xl">Ferramentas e tecnologias que uso</span>
+                <p class="font-medium opacity-70">Aqui estão algumas ferramentas essenciais para aprimorar meus projetos
+                    diários. Elas impulsionam minha produtividade e criatividade, tornando meu trabalho mais eficiente e
+                    satisfatório.</p>
+            </div>
+            <iframe data-aos="fade-right" data-aos-duration="800" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0sApFGSXpnwXOW7juGA6fW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="flex-1 h-max">
+            <div class="w-full h-max flex flex-col gap-2" data-aos="fade-right" data-aos-duration="800"
+                v-for="(c, i) in skillStore.skills" :key="i" style="z-index: 2;">
+                <span class="font-bold text-2xl">{{ c.name }}</span>
+                <div class="w-full h-max flex flex-row gap-4 flex-wrap">
+                    <div style="z-index: 3;" id="techs" class="shadow-2xl shadow-purple-700/20 p-2
+                h-max w-[15rem] rounded-md flex flex-row items-center justify-start gap-2 bg-zinc-800/50"
+                        v-for="(s, i) in c.items" data-aos="fade-right" data-aos-duration="800"
+                        :data-aos-delay="150 + (i + 1)">
+                        <div class="relative">
+                            <img class="w-12 inset-0 h-12 absolute scale-150 opacity-70 z-[1] brightness-200  blur-lg"
+                                :src="s.link" alt="" style="z-index: -1;">
+                            <div class="w-12 h-12 rounded-md relative p-2 overflow-hidden border border-zinc-100/30">
+                                <img class="w-full inset-0 h-full scale-150 absolute z-0 blur-lg brightness-75"
+                                    :src="s.link" alt="" style="z-index: -1;">
+                                <img class="w-full h-full z-10 rounded" :src="s.link" alt="">
+                            </div>
                         </div>
-                        <div class="text-white">
-                            <h1 class="font-bold text-lg">{{ skill.skillName }}</h1>
-                            <p class="opacity-75 font-bold">{{ skill.skillDesc }}</p>
-                        </div>
+                        <span class="font-medium">{{ s.name }}</span>
                     </div>
                 </div>
             </div>
@@ -26,54 +37,12 @@
 
 <script setup>
 import { useSkillStore } from '../store/Skills';
-import { useThemeStore } from '../store/theme';
-
-const themeStore = useThemeStore()
 const skillStore = useSkillStore()
-
 
 </script>
 
 <style scoped>
-.techContainer{
-    transition: all 500ms;
-    @apply w-full h-max flex flex-col gap-16 items-center justify-center
-}
-
-.techContainer > div {
-    @apply w-full h-max flex flex-row flex-wrap gap-12 justify-center
-}
-.techContainer > div > .skill{
-    transition: all 500ms;
-    @apply p-3 rounded-lg bg-transparent 
-    overflow-hidden h-[11.5rem] w-[11.5rem] hover:overflow-visible
-}
-.techContainer > div > .skill > .hover{
-    transition: all 500ms;
-    @apply fixed opacity-0 -z-20
-}
-.techContainer > div > .skill:hover > .hover{
-    @apply bottom-0 right-0 z-20 opacity-100 m-5
-}
-.techContainer > div > .skill > .hover > .content{
-    @apply w-full sm:max-w-[30rem] text-sm flex flex-row gap-2 p-3 rounded-lg
-}
-
-.techContainer > div > .skill > .hover > .content > .image{
-    @apply w-40 h-40 min-w-[10rem] p-4 bg-opacity-75 rounded-lg
-}
-
-.techContainer > div > .skill > .hover > .content > .image > img{
-    @apply w-full h-full rounded-lg
-}
-.techContainer > div > .skill > .image{
-    @apply w-40 h-40 min-w-[10rem] p-4 bg-opacity-75 rounded-lg border border-white
-}
-
-.techContainer > div > .skill > .image > img{
-    @apply w-full h-full rounded-lg
-}
-#vibracyHover{
-    @apply bg-zinc-500/30 backdrop-blur-lg border border-zinc-200 rounded-lg
+#techs {
+    overflow: hidden;
 }
 </style>
