@@ -15,7 +15,7 @@
         :class="{'border-zinc-700':themeStore.getTheme, 'border-zinc-400/50': !themeStore.getTheme}">
             <h1 class="text-xl font-bold"> 👋🏼 Sobre mim</h1>
             <p class="text-base xl:text-lg opacity-70">
-                Oi, meu nome é Luís Daví, e aos meus 19 anos, sou completamente apaixonado por tecnologia. Desde que me lembro, fui cativado pelo mundo da inovação e do progresso tecnológico. É incrível como a tecnologia está constantemente mudando e moldando nosso mundo, e sinto que estou apenas começando a explorar as vastas possibilidades de aprendizado e conquista que essa área oferece.
+                Oi, meu nome é Luís Daví, e aos meus 20 anos, sou completamente apaixonado por tecnologia. Desde que me lembro, fui cativado pelo mundo da inovação e do progresso tecnológico. É incrível como a tecnologia está constantemente mudando e moldando nosso mundo, e sinto que estou apenas começando a explorar as vastas possibilidades de aprendizado e conquista que essa área oferece.
             </p>
         </div>
         <div class="w-full flex flex-col lg:flex-row gap-4" id="stats">
