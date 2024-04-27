@@ -9,7 +9,7 @@
             </div>
             <iframe data-aos="fade-right" data-aos-duration="800" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0sApFGSXpnwXOW7juGA6fW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
-        <div class="flex-1 h-max">
+        <div class="flex-1 h-max flex flex-col gap-12">
             <div class="w-full h-max flex flex-col gap-2" data-aos="fade-right" data-aos-duration="800"
                 v-for="(c, i) in skillStore.skills" :key="i" style="z-index: 2;">
                 <span class="font-bold text-2xl">{{ c.name }}</span>

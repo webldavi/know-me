@@ -173,7 +173,7 @@ export const useSkillStore = defineStore("skillStore", {
                         },
                         {
                             name: 'Freepik',
-                            link: 'https://www.trustenablement.com/wp-content/uploads/2022/05/freepik.jpg'
+                            link: 'https://cdn-teams-slug.flaticon.com/freepik.jpg'
                         },
                         {
                             name: 'Google Fonts',
