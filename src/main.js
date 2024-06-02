@@ -25,9 +25,6 @@ const routes = [
         path: '/projects', component: Projects
     },
     {
-        path: '/blog', component: Blog
-    },
-    {
         path: '/techs', component: Techs
     }
 ]

@@ -16,11 +16,6 @@
         border border-transparent hover:border-zinc-700 hover:bg-zinc-800">
         Ferramentas e Tecnologias
       </router-link>
-      <router-link to="/blog" 
-        class="px-4 py-2 w-max h-max text-white text-lg flex flex-row gap-2 items-center font-medium  rounded-md
-        border border-transparent hover:border-zinc-700 hover:bg-zinc-800">
-        Blog
-      </router-link>
     </div>
     <button @click="asideStore.updateShow(true)" class="flex md:hidden text-white p-2 border border-zinc-700 rounded-md hover:bg-zinc-800">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
@@ -48,12 +43,6 @@
         class="w-full px-4 py-2 h-max text-white text-lg flex flex-row gap-2 justify-between items-center font-medium  rounded-md
         border border-transparent hover:border-zinc-700 hover:bg-zinc-800">
         Ferramentas e Tecnologias
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="m16.288 7.208l-9.765 9.746q-.14.14-.344.13q-.204-.009-.344-.15q-.14-.14-.14-.334t.14-.335L15.58 6.5H6.788q-.212 0-.356-.144t-.144-.357t.144-.356q.144-.143.356-.143h9.693q.343 0 .575.232q.232.232.232.576V16q0 .213-.143.356t-.357.144q-.213 0-.356-.144T16.288 16z"/></svg>
-      </router-link>
-      <router-link to="/blog" 
-        class="w-full px-4 py-2 h-max text-white text-lg flex flex-row gap-2 justify-between items-center font-medium  rounded-md
-        border border-transparent hover:border-zinc-700 hover:bg-zinc-800">
-        Blog
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="m16.288 7.208l-9.765 9.746q-.14.14-.344.13q-.204-.009-.344-.15q-.14-.14-.14-.334t.14-.335L15.58 6.5H6.788q-.212 0-.356-.144t-.144-.357t.144-.356q.144-.143.356-.143h9.693q.343 0 .575.232q.232.232.232.576V16q0 .213-.143.356t-.357.144q-.213 0-.356-.144T16.288 16z"/></svg>
       </router-link>
     </div>
