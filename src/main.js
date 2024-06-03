@@ -12,6 +12,7 @@ import Blog from './routes/Blog.vue';
 import Techs from './routes/Techs.vue';
 
 import { inject } from '@vercel/analytics';
+import Links from './routes/Links.vue'
  
 inject()
 AOS.init();
@@ -26,6 +27,9 @@ const routes = [
     },
     {
         path: '/techs', component: Techs
+    },
+    {
+        path: '/links', component: Links
     }
 ]
 
