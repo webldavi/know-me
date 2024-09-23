@@ -11,9 +11,9 @@
           <svg class="rotate-[-135deg]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M11.5 15.392V6q0-.213.143-.357q.144-.143.357-.143t.357.143q.143.144.143.357v9.392l3.746-3.746q.14-.14.344-.15q.204-.01.364.15t.16.354q0 .194-.16.354l-4.389 4.388q-.242.243-.565.243q-.323 0-.565-.243l-4.389-4.388q-.14-.14-.15-.344q-.01-.204.15-.364t.354-.16q.194 0 .354.16z"/></svg>
         </a>
       </div>
-      <div class="w-full h-max flex flex-col gap-4">
+      <div class="w-full h-max flex flex-row flex-wrap gap-12">
         <div v-for="(p, i) in projects" :key="i" data-aos="fade-right" data-aos-duration="800" :data-aos-delay="i <= 1 ? (i+1)*250 : 0"
-          class="flex flex-col lg:flex-row gap-4 items-center project px-4">
+          class="flex flex-col lg:flex-row gap-4 min-w-[48%] flex-1 items-center project px-4">
           <div class="lg:w-[25%] h-max relative">
             <img class="w-full rounded-md" :src="`${p.nameFile}.webp`" alt="" shadow>
             <img class="w-full absolute top-0 blur-[2px]  -z-10 rounded-md opacity-70" first :src="`${p.nameFile}.webp`" alt="">
@@ -26,7 +26,7 @@
             <div class="w-full flex flex-row gap-2">
               <img class="w-6 h-6" v-for="(t, i) in p.techs" :src="t.src" :alt="t.name">
             </div>
-            <a :href="p.rep" aria-label="Visitar Repositório do Projeto" title="Visitar Repositório do Projeto" class="font-bold w-full p-4 bg-purple-600 text-center rounded-md">Visitar Repositório</a>
+            <!-- <a :href="p.rep" aria-label="Visitar Repositório do Projeto" title="Visitar Repositório do Projeto" class="font-bold w-full p-4 bg-purple-600 text-center rounded-md">Visitar Repositório</a> -->
           </div>
         </div>
       </div>
@@ -246,7 +246,6 @@ const projects = ref([
 
 .projects * .project img{
   transition: all 300ms linear;
-  @apply shadow-2xl shadow-purple-700/20 
 }
 @media (min-width: 1024px){
   .projects * .project:hover div img[first]{

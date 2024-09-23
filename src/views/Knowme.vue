@@ -135,7 +135,7 @@ const links = ref([
         icon: Email,
         desc: "link para o meu email",
         id: Date.now(),
-        url: "mailto:luisdavi.contato@gmail.com"
+        url: "mailto:contato@luisdavi.tech"
     },
     {
         icon: Linkedin,
@@ -147,7 +147,7 @@ const links = ref([
         icon: Instagram,
         desc: "link para o meu instagram",
         id: Date.now(),
-        url: "https://instagram.com/lu1s.dev"
+        url: "https://instagram.com/luisdavi.tech"
     },
     {
         icon: Github,
@@ -281,7 +281,7 @@ onMounted(async() => {
 }
 
 .closed{
-    @apply -translate-x-[3000px]
+    @apply -translate-x-[9000px]
 }
 .opened{
     @apply translate-x-0
